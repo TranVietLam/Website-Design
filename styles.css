@@ -1,26 +1,26 @@
 /* =========================================================
 
-   VECTRA® — Swiss Monochrome Luxury & Numeric Matrix Theme
+   VECTRA® — Cobalt Tech Luxury & Numeric Matrix Theme
 
    ========================================================= */
 
 :root {
 
-  --bg-void: #050507;
+  --bg-void: #080c14;
 
-  --bg-panel: #0c0c10;
+  --bg-panel: #0f1724;
 
-  --bg-panel-hover: #121218;
+  --bg-panel-hover: #162032;
 
-  --border-hairline: rgba(255, 255, 255, 0.09);
+  --border-hairline: rgba(255, 255, 255, 0.08);
 
-  --border-strong: rgba(255, 255, 255, 0.22);
+  --border-strong: rgba(255, 255, 255, 0.18);
 
-  --text-primary: #f5f5f7;
+  --text-primary: #f1f5f9;
 
-  --text-muted: #8a8a93;
+  --text-muted: #94a3b8;
 
-  --accent: #ff3b30;
+  --accent: #3b82f6;
 
   --radius-control: 999px;
 
@@ -1690,11 +1690,11 @@ body {
 
   display: block;
 
-  border: 1px solid rgba(255, 59, 48, 0.5);
+  border: 1px solid rgba(59, 130, 246, 0.5);
 
   color: #ff6b63;
 
-  background: rgba(255, 59, 48, 0.08);
+  background: rgba(59, 130, 246, 0.08);
 
 }
 
@@ -1984,13 +1984,13 @@ body {
 
 .telemetry-3d-card:hover {
 
-  border-color: rgba(255, 59, 48, 0.45);
+  border-color: rgba(59, 130, 246, 0.45);
 
   box-shadow:
 
     0 34px 70px -18px rgba(0, 0, 0, 0.95),
 
-    0 0 36px -12px rgba(255, 59, 48, 0.28),
+    0 0 36px -12px rgba(59, 130, 246, 0.28),
 
     inset 0 1px 0 rgba(255, 255, 255, 0.18);
 
@@ -2138,7 +2138,7 @@ body {
 
     0 4px 0 #450a0a,
 
-    0 14px 26px rgba(255, 59, 48, 0.38);
+    0 14px 26px rgba(59, 130, 246, 0.38);
 
 }
 
@@ -2194,9 +2194,9 @@ body {
 
   color: #ffb4af;
 
-  background: rgba(255, 59, 48, 0.12);
+  background: rgba(59, 130, 246, 0.12);
 
-  border: 1px solid rgba(255, 59, 48, 0.4);
+  border: 1px solid rgba(59, 130, 246, 0.4);
 
   border-radius: var(--radius-control);
 
@@ -2226,7 +2226,7 @@ body {
 
   border-color: var(--accent);
 
-  box-shadow: 0 24px 56px -20px rgba(255, 59, 48, 0.28);
+  box-shadow: 0 24px 56px -20px rgba(59, 130, 246, 0.28);
 
 }
 
@@ -2304,9 +2304,9 @@ body {
 
 .discount-badge.hot {
 
-  border-color: rgba(255, 59, 48, 0.55);
+  border-color: rgba(59, 130, 246, 0.55);
 
-  background: rgba(255, 59, 48, 0.16);
+  background: rgba(59, 130, 246, 0.16);
 
   color: #ff8a84;
 
@@ -2384,7 +2384,7 @@ body {
 
 .price-perk.hot {
 
-  background: rgba(255, 59, 48, 0.1);
+  background: rgba(59, 130, 246, 0.1);
 
   border-left-color: var(--accent);
 
@@ -2418,7 +2418,7 @@ body {
 
   background:
 
-    radial-gradient(circle at 50% 35%, rgba(255, 59, 48, 0.12), transparent 62%),
+    radial-gradient(circle at 50% 35%, rgba(59, 130, 246, 0.12), transparent 62%),
 
     linear-gradient(180deg, #0a0a0f 0%, #050507 100%);
 
@@ -2576,7 +2576,7 @@ body {
 
   pointer-events: none;
 
-  background: linear-gradient(125deg, rgba(255, 255, 255, 0.16) 0%, transparent 40%, transparent 65%, rgba(255, 59, 48, 0.08) 100%);
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.16) 0%, transparent 40%, transparent 65%, rgba(59, 130, 246, 0.08) 100%);
 
 }
 
@@ -2594,7 +2594,7 @@ body {
 
   backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255, 59, 48, 0.5);
+  border: 1px solid rgba(59, 130, 246, 0.5);
 
   padding: 8px 14px;
 
@@ -2818,7 +2818,7 @@ body {
 
   height: 240px;
 
-  background: radial-gradient(ellipse at center, rgba(255, 59, 48, 0.22) 0%, transparent 70%);
+  background: radial-gradient(ellipse at center, rgba(59, 130, 246, 0.22) 0%, transparent 70%);
 
   pointer-events: none;
 
@@ -2852,9 +2852,9 @@ body {
 
   margin-bottom: 40px;
 
-  background: linear-gradient(135deg, rgba(255, 59, 48, 0.14) 0%, rgba(18, 18, 26, 0.95) 55%);
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.14) 0%, rgba(18, 18, 26, 0.95) 55%);
 
-  border: 1px solid rgba(255, 59, 48, 0.42);
+  border: 1px solid rgba(59, 130, 246, 0.42);
 
   border-radius: var(--radius-card);
 
@@ -2946,7 +2946,7 @@ body {
 
   transform: translateY(-2px);
 
-  box-shadow: 0 12px 28px -8px rgba(255, 59, 48, 0.55);
+  box-shadow: 0 12px 28px -8px rgba(59, 130, 246, 0.55);
 
 }
 
@@ -2968,7 +2968,7 @@ body {
 
 .contact-box:hover {
 
-  border-color: rgba(255, 59, 48, 0.5);
+  border-color: rgba(59, 130, 246, 0.5);
 
   transform: translateY(-3px);
 
@@ -2978,9 +2978,9 @@ body {
 
 .contact-box.highlight {
 
-  border-color: rgba(255, 59, 48, 0.45);
+  border-color: rgba(59, 130, 246, 0.45);
 
-  background: linear-gradient(180deg, rgba(255, 59, 48, 0.08) 0%, rgba(16, 16, 23, 0.96) 100%);
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.08) 0%, rgba(16, 16, 23, 0.96) 100%);
 
 }
 

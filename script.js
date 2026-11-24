@@ -62,7 +62,7 @@
 
 
 
-    ctx.fillStyle = 'rgba(5, 5, 7, 0.14)';
+    ctx.fillStyle = 'rgba(8, 12, 20, 0.15)';
 
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -76,7 +76,7 @@
 
       const isAccent = Math.random() > 0.985;
 
-      ctx.fillStyle = isAccent ? 'rgba(255, 59, 48, 0.35)' : 'rgba(245, 245, 247, 0.12)';
+      ctx.fillStyle = isAccent ? 'rgba(59, 130, 246, 0.45)' : 'rgba(241, 245, 249, 0.12)';
 
       ctx.fillText(text, i * fontSize, drops[i] * fontSize);
 
