@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VECTRA® — Thiết Kế Website Chuyên Nghiệp, Dễ Lên Top Google &amp; Chốt Đơn Cao</title>
+  <meta name="description" content="VECTRA® cung cấp dịch vụ thiết kế website sang trọng, dễ hiểu, chuẩn tìm kiếm Google và tốc độ mở trang dưới 1 giây với chi phí chỉ từ 500.000đ." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured Data (SEO Schema JSON-LD) -->
+  <script type="application/ld+json" id="seo-schema-org">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "VECTRA Digital Studio",
+    "description": "Dịch vụ thiết kế website doanh nghiệp và bán hàng trọn gói, dễ lên top Google và mở trang siêu nhanh.",
+    "areaServed": "VN",
+    "url": "https://www.google.com/search?q=https://vectra.vn",
+    "telephone": "+84-909-888-777",
+    "priceRange": "500.000đ - 5.000.000đ"
+  }
+  </script>
+</head>
+<body>
+  <!-- Subtle Numeric Matrix Canvas -->
+  <canvas id="matrix-bg" aria-hidden="true"></canvas>
+  <div class="bg-vignette" aria-hidden="true"></div>
+  <div id="scroll-progress"></div>
+
+  <div class="site-wrapper">
+    <!-- 1. HEADER -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#gioi-thieu" class="brand">
+          <span class="brand-dot"></span>
+          <span>VECTRA®</span>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Điều hướng chính">
+          <a href="#gioi-thieu" class="nav-link">Giới thiệu</a>
+          <a href="#diem-dau" class="nav-link">Vấn đề</a>
+          <a href="#giai-phap" class="nav-link">Bảng giá</a>
+          <a href="#case-study" class="nav-link">Dự án thực tế</a>
+          <a href="#blog-seo" class="nav-link">Blog kiến thức</a>
+          <a href="#lien-he" class="nav-link">Liên hệ</a>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" id="matrix-toggle" class="matrix-toggle">HIỆU ỨNG NỀN: BẬT</button>
+          <a href="#dang-ky" class="btn btn-primary btn-sm">Bắt đầu dự án</a>
+          <button type="button" id="mobile-toggle" class="mobile-toggle" aria-label="Mở menu">☰</button>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#gioi-thieu" class="nav-link">Giới thiệu</a>
+        <a href="#diem-dau" class="nav-link">Vấn đề</a>
+        <a href="#giai-phap" class="nav-link">Giải pháp &amp; Bảng giá</a>
+        <a href="#case-study" class="nav-link">Dự án thực tế</a>
+        <a href="#blog-seo" class="nav-link">Blog kiến thức</a>
+        <a href="#dang-ky" class="nav-link">Đăng ký tư vấn</a>
+        <a href="#lien-he" class="nav-link">Liên hệ</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. GIỚI THIỆU -->
+      <section id="gioi-thieu" class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="section-label">Thiết kế Website Chuyên Nghiệp</div>
+            <h1 class="hero-title">
+              Website tối giản.<br /><span>Chốt đơn tối đa.</span>
+            </h1>
+            <p class="hero-desc">
+              Thiết kế đẹp mắt, dễ lên Top Google và mở trang chưa tới 1 giây — giúp thương hiệu của bạn tạo niềm tin ngay từ lần đầu khách ghé thăm.
+            </p>
+            <div class="hero-cta">
+              <a href="#dang-ky" class="btn btn-primary">Nhận báo giá 24h →</a>
+              <a href="#case-study" class="btn btn-outline">Xem dự án thực tế</a>
+            </div>
+          </div>
+
+          <!-- 3D Interactive Metrics Card -->
+          <div class="telemetry-3d-stage reveal" id="metrics-3d-stage">
+            <div class="telemetry-frame telemetry-3d-card" id="metrics-3d-card">
+              <div class="telemetry-glare" id="metrics-glare" aria-hidden="true"></div>
+              <div class="telemetry-head">
+                <span class="telemetry-badge"><i class="live-dot"></i> CHỈ SỐ HIỆU QUẢ THỰC TẾ</span>
+                <span>CẬP NHẬT // 2026</span>
+              </div>
+              <div class="telemetry-grid">
+                <div class="telemetry-cell">
+                  <div class="telemetry-val countup-metric" data-target="0.6" data-decimals="1" data-suffix="s">0.6s</div>
+                  <div class="telemetry-label">Tốc độ mở trang</div>
+                </div>
+                <div class="telemetry-cell">
+                  <div class="telemetry-val countup-metric" data-target="99" data-suffix="/100">99/100</div>
+                  <div class="telemetry-label">Điểm chuẩn Google</div>
+                </div>
+                <div class="telemetry-cell">
+                  <div class="telemetry-val countup-metric" data-target="240" data-prefix="+" data-suffix="%">+240%</div>
+                  <div class="telemetry-label">Tăng lượng khách mua</div>
+                </div>
+                <div class="telemetry-cell">
+                  <div class="telemetry-val countup-metric" data-target="140" data-suffix="+">140+</div>
+                  <div class="telemetry-label">Website đã bàn giao</div>
+                </div>
+              </div>
+              <div class="telemetry-hint">Di chuột qua khung số để cảm nhận hiệu ứng 3D nổi</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. ĐIỂM ĐAU KHÁCH HÀNG -->
+      <section id="diem-dau" class="section">
+        <div class="container">
+          <div class="section-label">Thực trạng</div>
+          <h2 class="section-title">4 lý do website chưa ra đơn.</h2>
+
+          <div class="pain-list">
+            <div class="pain-row reveal">
+              <div class="pain-idx">01</div>
+              <div class="pain-body">
+                <h3 class="pain-heading">Giao diện giống hệt đối thủ</h3>
+                <p class="pain-text">Dùng mẫu làm sẵn đại trà khiến thương hiệu mờ nhạt, mất niềm tin của khách hàng ngay trong 5 giây đầu.</p>
+              </div>
+            </div>
+            <div class="pain-row reveal">
+              <div class="pain-idx">02</div>
+              <div class="pain-body">
+                <h3 class="pain-heading">Mở trang chậm, lãng phí tiền quảng cáo</h3>
+                <p class="pain-text">Khách bấm vào quảng cáo nhưng chờ lâu không hiện nội dung sẽ thoát ngay, làm rơi rớt 10–20% khách tiềm năng.</p>
+              </div>
+            </div>
+            <div class="pain-row reveal">
+              <div class="pain-idx">03</div>
+              <div class="pain-body">
+                <h3 class="pain-heading">Khó xem trên điện thoại</h3>
+                <p class="pain-text">Chữ nhỏ, bố cục rối mắt trên điện thoại khiến hơn 75% người dùng ngại đọc tiếp và bỏ qua nút đặt hàng.</p>
+              </div>
+            </div>
+            <div class="pain-row reveal">
+              <div class="pain-idx">04</div>
+              <div class="pain-body">
+                <h3 class="pain-heading">Khó tìm thấy trên Google &amp; không đo được hiệu quả</h3>
+                <p class="pain-text">Khách tìm tên dịch vụ trên Google không thấy bạn đâu, đồng thời bạn không biết khách đến từ kênh nào để tối ưu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. GIẢI PHÁP & BẢNG GIÁ -->
+      <section id="giai-phap" class="section">
+        <div class="container">
+          <div class="section-label">Giải pháp VECTRA®</div>
+          <h2 class="section-title">Đẹp mắt, dễ dùng và ra đơn thật.</h2>
+
+          <div class="solution-grid">
+            <div class="solution-card reveal">
+              <div class="solution-num">01 / GIAO DIỆN</div>
+              <h3 class="solution-title">Thiết kế riêng theo thương hiệu</h3>
+              <p class="solution-desc">Bố cục gọn gàng, sang trọng, làm nổi bật sản phẩm của bạn thay vì dùng mẫu rập khuôn.</p>
+            </div>
+            <div class="solution-card reveal">
+              <div class="solution-num">02 / TỐC ĐỘ</div>
+              <h3 class="solution-title">Mở trang mượt trong 1 giây</h3>
+              <p class="solution-desc">Tối ưu toàn diện để website hiển thị tức thì trên cả máy tính lẫn điện thoại dùng mạng 4G.</p>
+            </div>
+            <div class="solution-card reveal">
+              <div class="solution-num">03 / LÊN TOP GOOGLE</div>
+              <h3 class="solution-title">Chuẩn tìm kiếm Google &amp; Blog</h3>
+              <p class="solution-desc">Xây dựng sẵn cấu trúc thân thiện với Google và mục Blog tin tức để thu hút khách hàng tự nhiên mỗi ngày.</p>
+            </div>
+            <div class="solution-card reveal">
+              <div class="solution-num">04 / TỰ CHỦ</div>
+              <h3 class="solution-title">Dễ tự chỉnh sửa &amp; Bảo hành 12 tháng</h3>
+              <p class="solution-desc">Bàn giao toàn bộ quyền quản trị, tự thay ảnh và cập nhật giá bán dễ dàng, hỗ trợ kỹ thuật trọn năm.</p>
+            </div>
+          </div>
+
+          <!-- Bảng giá hấp dẫn mới -->
+          <div class="pricing-header-note reveal">
+            <span class="promo-pill">ƯU ĐÃI THÁNG NÀY • TẶNG KÈM TÊN MIỀN, LƯU TRỮ &amp; BẢO HÀNH</span>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- Gói 1: 500.000đ -->
+            <div class="price-card reveal">
+              <div>
+                <div class="price-top-row">
+                  <div class="price-tag">01 • Khởi nghiệp</div>
+                  <span class="discount-badge">Giảm 65%</span>
+                </div>
+                <h3 class="price-name">Landing Page Bán Hàng</h3>
+                <div class="price-compare">Giá gốc: <s>1.500.000đ</s></div>
+                <div class="price-val">500.000<span>VNĐ</span></div>
+                <div class="price-perk">🎁 Tặng cài đặt nút Zalo, Messenger &amp; 1 banner sản phẩm</div>
+                <ul class="price-features">
+                  <li>Thiết kế 1 trang giới thiệu gọn đẹp, dễ chốt đơn</li>
+                  <li>Hiển thị mượt mà trên mọi dòng điện thoại</li>
+                  <li>Gắn sẵn Form nhận đơn &amp; công cụ đếm lượt khách</li>
+                  <li>Bàn giao nhanh chỉ trong 2–3 ngày làm việc</li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-outline select-pkg" data-pkg="Landing Page (500.000VNĐ)">Chọn gói 500K ngay</button>
+            </div>
+
+            <!-- Gói 2: 3.000.000đ -->
+            <div class="price-card featured reveal">
+              <div class="featured-ribbon">PHỔ BIẾN NHẤT</div>
+              <div>
+                <div class="price-top-row">
+                  <div class="price-tag">02 • Chuyên nghiệp</div>
+                  <span class="discount-badge hot">Tiết kiệm 2 triệu</span>
+                </div>
+                <h3 class="price-name">Website Doanh Nghiệp</h3>
+                <div class="price-compare">Giá gốc: <s>5.000.000đ</s></div>
+                <div class="price-val">3.000.000<span>VNĐ</span></div>
+                <div class="price-perk hot">🎁 Tặng 01 năm lưu trữ tốc độ cao + Khóa bảo mật SSL + 5 bài viết mẫu</div>
+                <ul class="price-features">
+                  <li>Đầy đủ trang Giới thiệu, Sản phẩm, Dịch vụ &amp; Blog lên Top Google</li>
+                  <li>Trang quản trị tiếng Việt, tự đổi ảnh và sửa giá cực dễ</li>
+                  <li>Tối ưu tốc độ mở trang nhanh &amp; chuẩn hiển thị Google</li>
+                  <li>Bảo hành kỹ thuật và hỗ trợ chỉnh sửa 12 tháng</li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-primary select-pkg" data-pkg="Website Doanh Nghiệp (3.000.000VNĐ)">Chọn gói 3 Triệu (Ưu đãi)</button>
+            </div>
+
+            <!-- Gói 3: 5.000.000đ -->
+            <div class="price-card reveal">
+              <div>
+                <div class="price-top-row">
+                  <div class="price-tag">03 • Cao cấp VIP</div>
+                  <span class="discount-badge">Trọn gói A–Z</span>
+                </div>
+                <h3 class="price-name">Website Bán Hàng Cao Cấp</h3>
+                <div class="price-compare">Giá gốc: <s>8.000.000đ</s></div>
+                <div class="price-val">5.000.000<span>VNĐ</span></div>
+                <div class="price-perk">🎁 Tặng tên miền .COM/.VN + Lưu trữ 1 năm + Hiệu ứng 3D sản phẩm</div>
+                <ul class="price-features">
+                  <li>Thiết kế độc quyền theo yêu cầu, hỗ trợ đa ngôn ngữ</li>
+                  <li>Có sẵn Giỏ hàng, thanh toán chuyển khoản QR &amp; quản lý đơn</li>
+                  <li>Tích hợp hiệu ứng 3D sản phẩm nổi bật &amp; Blog tự động cập nhật</li>
+                  <li>Ưu tiên hỗ trợ kỹ thuật 1-1 nhanh chóng trong 12 tháng</li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-outline select-pkg" data-pkg="Website Cao Cấp (5.000.000VNĐ)">Nhận ưu đãi gói 5 Triệu</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. CASE STUDY — KẾT QUẢ ĐO LƯỜNG THỰC TẾ + SẢN PHẨM 3D THẬT -->
+      <section id="case-study" class="section">
+        <div class="container">
+          <div class="section-label">Dự án đã hoàn thiện</div>
+          <h2 class="section-title">Kết quả thực tế &amp; Sản phẩm đã bàn giao.</h2>
+          <p class="section-sub">Chọn từng dự án bên trái và di chuột lên màn hình sản phẩm 3D bên phải để xem chi tiết giao diện thực tế.</p>
+
+          <div class="case-split reveal">
+            <div id="case-list" class="case-list"></div>
+            <div class="case-preview">
+              <div class="case-3d-stage" id="case-3d-stage">
+                <div id="case-visual" class="case-visual-3d"></div>
+              </div>
+              <div class="case-metrics-strip" id="case-metrics-strip"></div>
+              <div class="case-preview-footer">
+                <p id="case-summary" class="pain-text"></p>
+                <a href="#dang-ky" class="btn btn-primary btn-sm">Làm website như mẫu này →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CHUYÊN MỤC BLOG CHUẨN SEO (TÍCH HỢP CALL API BÊN NGOÀI) -->
+      <section id="blog-seo" class="section">
+        <div class="container">
+          <div class="blog-header">
+            <div>
+              <div class="section-label">Blog Kiến Thức • Chuẩn Google</div>
+              <h2 class="section-title">Kinh nghiệm làm web &amp; bán hàng hiệu quả.</h2>
+              <div class="api-status-bar">
+                <span class="api-dot" id="blog-api-dot"></span>
+                <span id="blog-api-status">Đang kết nối API bài viết mới nhất...</span>
+                <button type="button" id="refresh-blog-api" class="api-refresh-btn">↻ Tải lại API</button>
+              </div>
+            </div>
+            <div class="blog-filters">
+              <button type="button" class="filter-btn active" data-cat="all">Tất cả</button>
+              <button type="button" class="filter-btn" data-cat="Bán hàng Online">Bán hàng Online</button>
+              <button type="button" class="filter-btn" data-cat="Lên Top Google">Lên Top Google</button>
+              <button type="button" class="filter-btn" data-cat="Thiết kế đẹp">Thiết kế đẹp</button>
+              <button type="button" class="filter-btn" data-cat="Tin công nghệ (API)">Tin công nghệ (API)</button>
+            </div>
+          </div>
+
+          <div id="blog-grid" class="blog-grid reveal"></div>
+        </div>
+      </section>
+
+      <!-- 7. CALL ACTION (FORM) -->
+      <section id="dang-ky" class="section">
+        <div class="container cta-grid">
+          <div class="reveal">
+            <div class="section-label">Bắt đầu dự án</div>
+            <h2 class="section-title">Nhận phương án &amp; báo giá trong 24h.</h2>
+            <p class="hero-desc" style="margin-top:16px;">
+              Không gọi làm phiền. Gửi trực tiếp bản phác thảo giao diện, thời gian hoàn thiện và chi phí rõ ràng nhất.
+            </p>
+          </div>
+
+          <form id="lead-form" class="cta-form reveal" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Họ và tên *</label>
+                <input id="name" type="text" required placeholder="Nguyễn Minh Anh" />
+              </div>
+              <div class="field">
+                <label for="phone">Số điện thoại / Zalo *</label>
+                <input id="phone" type="tel" required placeholder="0909 123 456" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="email">Email *</label>
+                <input id="email" type="email" required placeholder="name@company.vn" />
+              </div>
+              <div class="field">
+                <label for="package">Gói quan tâm</label>
+                <select id="package">
+                  <option value="Landing Page (500.000VNĐ)">Landing Page — 500.000VNĐ</option>
+                  <option value="Website Doanh Nghiệp (3.000.000VNĐ)" selected>Website Doanh Nghiệp — 3.000.000VNĐ</option>
+                  <option value="Website Cao Cấp (5.000.000VNĐ)">Website Cao Cấp — 5.000.000VNĐ</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="note">Yêu cầu ngắn gọn</label>
+              <textarea id="note" rows="3" placeholder="Ngành nghề kinh doanh, sản phẩm bạn muốn giới thiệu..."></textarea>
+            </div>
+            <div id="form-msg" class="form-msg"></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Gửi yêu cầu tư vấn miễn phí →</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- 8. FOOTER NỔI BẬT -->
+    <footer id="lien-he" class="site-footer">
+      <div class="footer-glow" aria-hidden="true"></div>
+      <div class="container footer-inner">
+        <!-- Prominent Footer CTA Banner -->
+        <div class="footer-banner reveal">
+          <div>
+            <div class="footer-banner-tag">Sẵn sàng bứt phá doanh thu?</div>
+            <h2 class="footer-banner-title">Sở hữu website chuyên nghiệp chỉ từ <span>500.000VNĐ</span></h2>
+            <p class="footer-banner-desc">Tư vấn tận tâm bằng ngôn ngữ dễ hiểu — Bàn giao nhanh — Bảo hành trọn năm.</p>
+          </div>
+          <div class="footer-banner-actions">
+            <a href="#dang-ky" class="btn btn-accent">Đăng ký nhận ưu đãi →</a>
+            <button type="button" class="btn btn-outline copy-btn-lg" data-copy="0909888777">Gọi / Zalo: 0909 888 777</button>
+          </div>
+        </div>
+
+        <div class="footer-grid">
+          <div class="contact-box highlight">
+            <div class="contact-label">Hotline / Zalo hỗ trợ nhanh</div>
+            <div class="contact-val">0909 888 777</div>
+            <p class="contact-sub">Phản hồi trong 15 phút • Tư vấn 1-1 miễn phí</p>
+            <button type="button" class="copy-btn" data-copy="0909888777">📋 Sao chép số điện thoại</button>
+          </div>
+          <div class="contact-box">
+            <div class="contact-label">Email nhận yêu cầu</div>
+            <div class="contact-val">hello@vectra.vn</div>
+            <p class="contact-sub">Gửi mẫu tham khảo hoặc báo giá doanh nghiệp</p>
+            <button type="button" class="copy-btn" data-copy="hello@vectra.vn">📋 Sao chép email</button>
+          </div>
+          <div class="contact-box">
+            <div class="contact-label">Văn phòng làm việc</div>
+            <div class="contact-val">TP. HCM • Biên Hòa</div>
+            <p class="contact-sub">Hỗ trợ gặp trực tiếp &amp; họp Online toàn quốc</p>
+          </div>
+          <div class="contact-box">
+            <div class="contact-label">Thời gian hỗ trợ</div>
+            <div class="contact-val">Thứ 2 – Thứ 7</div>
+            <p class="contact-sub">08:30 – 18:00 (Hỗ trợ sự cố 24/7)</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-brand-row">
+            <span class="brand-dot"></span>
+            <strong>VECTRA® DIGITAL STUDIO</strong>
+            <span>— Thiết kế Website Chuyên Nghiệp &amp; Dễ Lên Top Google © 2026</span>
+          </div>
+          <div class="footer-nav-links">
+            <a href="#giai-phap" class="nav-link">Bảng giá</a>
+            <a href="#case-study" class="nav-link">Dự án</a>
+            <a href="#blog-seo" class="nav-link">Blog</a>
+            <a href="#gioi-thieu" class="nav-link footer-top-btn">Về đầu trang ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Full-Screen SEO Blog Article Reader -->
+  <div id="blog-reader" class="blog-reader-overlay" role="dialog" aria-modal="true">
+    <div class="blog-article-container">
+      <div class="article-topbar">
+        <span id="article-meta">BLOG KIẾN THỨC</span>
+        <button type="button" id="close-reader" class="btn btn-outline btn-sm">Đóng ✕</button>
+      </div>
+      <article id="article-content" class="article-content"></article>
+    </div>
+  </div>
+
+  <div id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
