@@ -138,11 +138,57 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 if (mobileToggle && mobileMenu) {
 
-  mobileToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  function setMobileMenu(isOpen) {
+
+    mobileMenu.classList.toggle('open', isOpen);
+
+    mobileToggle.textContent = isOpen ? '✕' : '☰';
+
+    mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+
+  }
+
+
+
+  mobileToggle.addEventListener('click', (e) => {
+
+    e.stopPropagation();
+
+    const isOpen = mobileMenu.classList.contains('open');
+
+    setMobileMenu(!isOpen);
+
+  });
+
+
 
   mobileMenu.querySelectorAll('a').forEach((link) => {
 
-    link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    link.addEventListener('click', () => setMobileMenu(false));
+
+  });
+
+
+
+  document.addEventListener('click', (e) => {
+
+    if (!mobileMenu.contains(e.target) && !mobileToggle.contains(e.target)) {
+
+      setMobileMenu(false);
+
+    }
+
+  });
+
+
+
+  window.addEventListener('resize', () => {
+
+    if (window.innerWidth >= 1024 && mobileMenu.classList.contains('open')) {
+
+      setMobileMenu(false);
+
+    }
 
   });
 
@@ -770,7 +816,7 @@ function renderBlog() {
 
   if (list.length === 0) {
 
-    blogGridEl.innerHTML = '&lt;div class=&quot;blog-card&quot;&gt;&lt;p class=&quot;blog-excerpt&quot;&gt;Chưa có bài viết trong mục này. Bấm "↻ Tải lại API" để cập nhật.&lt;/p&gt;&lt;/div&gt;';
+    blogGridEl.innerHTML = '<div class="blog-card"><p class="blog-excerpt">Chưa có bài viết trong mục này. Bấm "↻ Tải lại API" để cập nhật.</p></div>';
 
     return;
 
@@ -786,7 +832,7 @@ function renderBlog() {
 
           <span class="blog-cat">${p.category}</span>
 
-          ${p.isExternal ? '<span class="blog-source-pill">API LIVE</span>' : `&lt;span&gt;${p.readTime}&lt;/span&gt;`}
+          ${p.isExternal ? '<span class="blog-source-pill">API LIVE</span>' : `<span>${p.readTime}</span>`}
 
         </div>
 
@@ -830,7 +876,7 @@ function openArticle(id) {
 
     <div class="article-tags">
 
-      ${post.tags.map((t) => `&lt;span class=&quot;seo-tag&quot;&gt;${t}&lt;/span&gt;`).join('')}
+      ${post.tags.map((t) => `<span class="seo-tag">${t}</span>`).join('')}
 
     </div>
 
