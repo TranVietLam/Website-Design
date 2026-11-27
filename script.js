@@ -12,39 +12,59 @@ const i18n = {
     nav_intro: 'Giới thiệu',
     nav_pain: 'Vấn đề',
     nav_pricing: 'Bảng giá',
-    nav_cases: 'Dự án thực tế',
+    nav_cases: 'Mẫu website',
     nav_blog: 'Blog kiến thức',
     nav_contact: 'Liên hệ',
     nav_cta: 'Bắt đầu dự án',
     mnav_pricing: 'Giải pháp & Bảng giá',
     mnav_consult: 'Đăng ký tư vấn',
     hero_label: 'Thiết kế Website Chuyên Nghiệp',
-    hero_title: 'Website tối giản.<br /><span>Chốt đơn tối đa.</span>',
+    hero_title: 'Biến khách ghé thăm<br />thành <em>khách mua hàng</em><br />ngay trên website',
     hero_desc: 'Thiết kế đẹp mắt, dễ lên Top Google và mở trang chưa tới 1 giây — giúp thương hiệu của bạn tạo niềm tin ngay từ lần đầu khách ghé thăm.',
-    hero_cta_1: 'Nhận báo giá 24h →',
-    hero_cta_2: 'Xem dự án thực tế',
+    hero_cta_1: 'Nhận báo giá 24h',
+    hero_cta_2: 'Xem mẫu website',
+    hero_proof: '500+ website đã bàn giao',
+    tf_sales_label: 'Doanh thu tháng',
+    tf_order_tag: 'Đơn hàng mới',
+    tf_order_name: 'Gói Doanh Nghiệp',
+    hs_1_l: 'Dự án bàn giao',
+    hs_1_s: 'khách hàng',
+    hs_1_p: 'từ 2022',
+    hs_2_l: 'Tốc độ tải trang',
+    hs_2_s: 'hiển thị tức thì',
+    hs_2_p: 'chuẩn Google',
+    hs_3_l: 'Bảo hành kỹ thuật',
+    hs_3_s: 'hỗ trợ 1-1',
+    hs_3_p: 'trọn năm',
+    hs_4_l: 'Chi phí khởi tạo',
+    hs_4_s: 'gói cơ bản',
+    hs_4_p: 'trọn gói',
     sc_url: 'thuonghieucuaban.vn',
     sc_live: 'ONLINE',
     sc_brand: 'THƯƠNG HIỆU',
-    sc_tag: 'Giao diện độc quyền',
+    sc_tag: 'Giao diện độc quyền • Chuẩn Google',
     sc_heading: 'Sản phẩm nổi bật, khách nhìn là tin.',
     sc_btn: 'Đặt hàng ngay →',
-    sc_p1: '✓ Chuẩn Google',
-    sc_p2: '✓ Bảo mật SSL',
+    sc_p1: 'Tốc độ',
+    sc_p2: 'Đơn hàng',
     sc_p3: '✓ Tự chỉnh sửa',
     sc_phone_cta: 'Liên hệ Zalo',
-    sc_pill: 'Tương thích Laptop & Điện thoại',
-    pain_label: 'Thực trạng',
-    pain_title: '4 lý do website chưa ra đơn.',
-    pain_1_badge: '5s mất niềm tin',
-    pain_1_h: 'Giao diện giống hệt đối thủ',
-    pain_2_badge: '-20% khách quảng cáo',
-    pain_2_h: 'Mở trang chậm, rớt đơn quảng cáo',
-    pain_3_badge: '75% thoát trang',
-    pain_3_h: 'Rối mắt, khó bấm trên điện thoại',
-    pain_4_badge: 'Top #99+',
-    pain_4_h: 'Mất hút trên Google & mù số liệu',
-    sol_label: 'Giải pháp VECTRA®',
+    sc_pill: 'Mở trang dưới 0.8s',
+    ol_label: 'Thực trạng & Giải pháp',
+    ol_title: 'Một giải pháp trọn vẹn<br />cho <em>mọi điểm nghẽn</em>',
+    ol_t0: 'Giao diện độc quyền',
+    ol_t1: 'Tốc độ dưới 1s',
+    ol_t2: 'Chuẩn điện thoại',
+    ol_t3: 'Lên Top Google',
+    ai_title: 'Mô tả ngành hàng của bạn,<br /><em>VECTRA® dựng mẫu ngay</em>',
+    ai_ph: 'Ví dụ: Shop thời trang, nha khoa, quán cà phê, bất động sản...',
+    ai_btn: 'Tạo mẫu',
+    ai_s1: 'Ngành hàng',
+    ai_s2: 'Giao diện',
+    ai_s3: 'Nội dung',
+    ai_s4: 'Chốt đơn & Zalo',
+    ai_time: 'Xong trong 0.8s',
+    sol_label: 'Bảng giá ưu đãi',
     sol_title: 'Đẹp mắt, dễ dùng và ra đơn thật.',
     sol_1_n: '01 / GIAO DIỆN',
     sol_1_h: 'Thiết kế riêng theo thương hiệu',
@@ -173,39 +193,59 @@ const i18n = {
     nav_intro: 'Overview',
     nav_pain: 'Challenges',
     nav_pricing: 'Pricing',
-    nav_cases: 'Case Studies',
+    nav_cases: 'Web Templates',
     nav_blog: 'Insights Blog',
     nav_contact: 'Contact',
     nav_cta: 'Start a Project',
     mnav_pricing: 'Solutions & Pricing',
     mnav_consult: 'Free Consultation',
     hero_label: 'Professional Web Design Studio',
-    hero_title: 'Minimalist Design.<br /><span>Maximum Conversions.</span>',
+    hero_title: 'Turn website visitors<br />into <em>paying buyers</em><br />in seconds',
     hero_desc: 'Bespoke aesthetics, top Google rankings, and sub-second page loads — helping your brand earn instant customer trust from the very first click.',
-    hero_cta_1: 'Get a 24h Quote →',
-    hero_cta_2: 'Explore Live Work',
+    hero_cta_1: 'Get a 24h Quote',
+    hero_cta_2: 'Explore Templates',
+    hero_proof: '500+ websites delivered',
+    tf_sales_label: 'Monthly sales',
+    tf_order_tag: 'New order',
+    tf_order_name: 'Business Suite',
+    hs_1_l: 'Sites delivered',
+    hs_1_s: 'happy clients',
+    hs_1_p: 'since 2022',
+    hs_2_l: 'Page load speed',
+    hs_2_s: 'instant render',
+    hs_2_p: 'Google ready',
+    hs_3_l: 'Tech warranty',
+    hs_3_s: '1-on-1 support',
+    hs_3_p: 'full year',
+    hs_4_l: 'Starting from',
+    hs_4_s: 'starter plan',
+    hs_4_p: 'all-in-one',
     sc_url: 'yourbrand.com',
     sc_live: 'ONLINE',
     sc_brand: 'YOUR BRAND',
-    sc_tag: 'Bespoke Design',
+    sc_tag: 'Bespoke Design • SEO Ready',
     sc_heading: 'Showcase products, earn instant trust.',
     sc_btn: 'Order Now →',
-    sc_p1: '✓ Google SEO',
-    sc_p2: '✓ SSL Secured',
+    sc_p1: 'Load speed',
+    sc_p2: 'Orders',
     sc_p3: '✓ Easy Editing',
     sc_phone_cta: 'Chat on Zalo',
-    sc_pill: 'Desktop & Mobile Ready',
-    pain_label: 'The Problem',
-    pain_title: '4 reasons most websites fail to convert.',
-    pain_1_badge: '5s trust drop',
-    pain_1_h: 'Generic look identical to competitors',
-    pain_2_badge: '-20% ad leads',
-    pain_2_h: 'Slow loading, wasted ad spend',
-    pain_3_badge: '75% bounce rate',
-    pain_3_h: 'Cluttered, hard to tap on mobile',
-    pain_4_badge: 'Rank #99+',
-    pain_4_h: 'Invisible on Google & zero data',
-    sol_label: 'VECTRA® Solution',
+    sc_pill: 'Sub-0.8s page load',
+    ol_label: 'Problems & Solutions',
+    ol_title: 'One complete solution<br />for <em>every conversion leak</em>',
+    ol_t0: 'Bespoke Design',
+    ol_t1: 'Sub-1s Speed',
+    ol_t2: 'Mobile Ready',
+    ol_t3: 'Google Top #1',
+    ai_title: 'Describe what you sell,<br /><em>VECTRA® builds the demo</em>',
+    ai_ph: 'e.g. Fashion boutique, dental clinic, coffee shop, real estate...',
+    ai_btn: 'Create',
+    ai_s1: 'Niche',
+    ai_s2: 'Design',
+    ai_s3: 'Copy',
+    ai_s4: 'Checkout & Zalo',
+    ai_time: 'Done in 0.8s',
+    sol_label: 'Special Pricing',
     sol_title: 'Refined, effortless, and built to sell.',
     sol_1_n: '01 / DESIGN',
     sol_1_h: 'Tailored to your brand identity',
@@ -1013,6 +1053,8 @@ function applyLanguage(lang, showNotice) {
   });
 
   renderCases();
+  if (typeof renderOneLink === 'function') renderOneLink();
+  if (typeof renderAiBuilder === 'function') renderAiBuilder();
   rebuildBlogPosts();
   renderBlog();
 
@@ -1029,9 +1071,7 @@ document.querySelectorAll('.lang-btn').forEach((btn) => {
   });
 });
 
-// Initialize language, cases, and blog API
-applyLanguage(currentLang, false);
-fetchExternalBlogAPI();
+// Initialization moved to bottom after all sections & data are defined
 
 // 7. Pricing Quick Modal (Form + Zalo), Main Form Validation & Copy Helper
 const pkgSelect = document.getElementById('package');
@@ -1161,3 +1201,376 @@ const revealObserver = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+
+// 9. One-Link Style Pain & Solution Tabs + AI Builder Interactive Fan Cards
+const oneLinkData = {
+  vi: [
+    {
+      tag: '01 / GIAO DIỆN',
+      image: 'assets/case-study-1.jpg',
+      cardTitle: 'Giao diện độc quyền thương hiệu',
+      m1Val: '5s', m1Lab: 'Tạo niềm tin',
+      m2Val: '+240%', m2Lab: 'Đơn hàng',
+      cta: 'Xem mẫu thực tế →',
+      badBadge: '5s mất khách',
+      goodBadge: '✓ Ấn tượng ngay',
+      heading: 'Nổi bật khác biệt thay vì <em>giống hệt đối thủ</em>',
+      bad: 'Dùng mẫu đại trà khiến khách lướt qua trong 5 giây.',
+      good: 'Thiết kế riêng theo nhận diện, làm nổi bật sản phẩm chủ lực.',
+      pills: ['✓ Bố cục độc quyền', '✓ Ảnh sản phẩm sắc nét', '✓ Nút chốt đơn rõ ràng'],
+    },
+    {
+      tag: '02 / TỐC ĐỘ',
+      image: 'assets/case-study-2.jpg',
+      cardTitle: 'Tải trang tức thì dưới 1 giây',
+      m1Val: '0.7s', m1Lab: 'Mở trang',
+      m2Val: '99/100', m2Lab: 'Điểm Google',
+      cta: 'Tăng tốc ngay →',
+      badBadge: '4.8s rớt khách',
+      goodBadge: '⚡ Nhanh 0.7s',
+      heading: 'Mở trang tức thì, <em>không lãng phí tiền Ads</em>',
+      bad: 'Web chậm làm rớt 20% khách bấm từ quảng cáo.',
+      good: 'Tối ưu ảnh & mã nguồn giúp mở mượt ngay cả trên mạng 4G.',
+      pills: ['✓ Tải trang 0.7 giây', '✓ Không giật lag', '✓ Giữ chân khách Ads'],
+    },
+    {
+      tag: '03 / DI ĐỘNG',
+      image: 'assets/case-study-3.jpg',
+      cardTitle: 'Trải nghiệm mượt trên điện thoại',
+      m1Val: '75%', m1Lab: 'Khách Mobile',
+      m2Val: '2 chạm', m2Lab: 'Đặt hàng',
+      cta: 'Xem bản Mobile →',
+      badBadge: '75% thoát trang',
+      goodBadge: '📱 Chuẩn từng nút',
+      heading: 'Chữ rõ, nút lớn <em>chạm là đặt hàng</em>',
+      bad: 'Chữ nhỏ, vỡ khung trên điện thoại khiến khách ngại bấm.',
+      good: 'Thiết kế ưu tiên màn hình dọc, nút Zalo & đặt hàng ngay tầm tay.',
+      pills: ['✓ Vừa khít mọi màn hình', '✓ Nút Zalo 1 chạm', '✓ Giỏ hàng siêu gọn'],
+    },
+    {
+      tag: '04 / GOOGLE SEO',
+      image: 'assets/case-study-2.jpg',
+      cardTitle: 'Lên Top Google & đo hiệu quả',
+      m1Val: 'Top #1', m1Lab: 'Tìm kiếm',
+      m2Val: '12T', m2Lab: 'Bảo hành',
+      cta: 'Nhận lộ trình SEO →',
+      badBadge: 'Top #99+ mất hút',
+      goodBadge: '▲ Hút khách tự nhiên',
+      heading: 'Khách tự tìm thấy bạn <em>trên Google mỗi ngày</em>',
+      bad: 'Tìm tên dịch vụ không thấy đâu, không biết khách đến từ đâu.',
+      good: 'Sẵn cấu trúc chuẩn Google, Blog kiến thức & thống kê lượt khách.',
+      pills: ['✓ Chuẩn cấu trúc Google', '✓ Tích hợp Blog SEO', '✓ Quản trị dễ dàng'],
+    },
+  ],
+  en: [
+    {
+      tag: '01 / DESIGN',
+      image: 'assets/case-study-1.jpg',
+      cardTitle: 'Bespoke Brand Identity UI',
+      m1Val: '5s', m1Lab: 'Instant trust',
+      m2Val: '+240%', m2Lab: 'Orders',
+      cta: 'Explore Demos →',
+      badBadge: '5s trust drop',
+      goodBadge: '✓ Stand out',
+      heading: 'Stand out instantly instead of <em>generic templates</em>',
+      bad: 'Cookie-cutter layouts dilute your brand within 5 seconds.',
+      good: 'Tailored visual hierarchy that spotlights your core offer.',
+      pills: ['✓ Exclusive layout', '✓ Crisp product showcase', '✓ Clear CTA flow'],
+    },
+    {
+      tag: '02 / SPEED',
+      image: 'assets/case-study-2.jpg',
+      cardTitle: 'Sub-1s Instant Page Load',
+      m1Val: '0.7s', m1Lab: 'Load time',
+      m2Val: '99/100', m2Lab: 'Core Vitals',
+      cta: 'Boost Speed →',
+      badBadge: '4.8s bounce',
+      goodBadge: '⚡ 0.7s load',
+      heading: 'Instant rendering so you <em>never waste ad spend</em>',
+      bad: 'Slow pages lose 20% of paid ad clicks before content shows.',
+      good: 'Engineered for sub-second speed even on cellular 4G.',
+      pills: ['✓ 0.7s page load', '✓ Zero layout shift', '✓ Higher ad ROI'],
+    },
+    {
+      tag: '03 / MOBILE',
+      image: 'assets/case-study-3.jpg',
+      cardTitle: 'Thumb-Friendly Mobile UX',
+      m1Val: '75%', m1Lab: 'Mobile buyers',
+      m2Val: '2-tap', m2Lab: 'Checkout',
+      cta: 'View Mobile →',
+      badBadge: '75% bounce rate',
+      goodBadge: '📱 Pixel-perfect',
+      heading: 'Readable text & <em>effortless 2-tap checkout</em>',
+      bad: 'Tiny text and broken mobile grids frustrate smartphone users.',
+      good: 'Mobile-first layout with thumb-ready Zalo & order buttons.',
+      pills: ['✓ Fits every phone', '✓ 1-tap Zalo chat', '✓ Frictionless form'],
+    },
+    {
+      tag: '04 / GOOGLE SEO',
+      image: 'assets/case-study-2.jpg',
+      cardTitle: 'Rank Top #1 on Google',
+      m1Val: 'Top #1', m1Lab: 'Search rank',
+      m2Val: '12M', m2Lab: 'Warranty',
+      cta: 'Get SEO Plan →',
+      badBadge: 'Rank #99+',
+      goodBadge: '▲ Organic traffic',
+      heading: 'Get discovered <em>on Google every single day</em>',
+      bad: 'Invisible on search results with zero visitor attribution.',
+      good: 'Built-in Schema, SEO Blog & clear lead tracking.',
+      pills: ['✓ Google-ready structure', '✓ Integrated SEO Blog', '✓ Easy self-editing'],
+    },
+  ],
+};
+
+let activeOlIdx = 0;
+function renderOneLink() {
+  const list = oneLinkData[currentLang] || oneLinkData.vi;
+  const item = list[activeOlIdx] || list[0];
+  const visualEl = document.getElementById('ol-visual');
+  const copyEl = document.getElementById('ol-copy');
+  if (!visualEl || !copyEl) return;
+
+  visualEl.innerHTML = `
+    <div class="ol-phone">
+      <div class="ol-phone-img">
+        <img src="${item.image}" alt="${item.cardTitle}" />
+        <span class="ol-phone-tag">${item.tag}</span>
+      </div>
+      <div class="ol-phone-title">${item.cardTitle}</div>
+      <div class="ol-phone-metrics">
+        <div><strong>${item.m1Val}</strong><span>${item.m1Lab}</span></div>
+        <div><strong>${item.m2Val}</strong><span>${item.m2Lab}</span></div>
+      </div>
+      <a href="#giai-phap" class="ol-phone-cta">${item.cta}</a>
+    </div>
+    <div class="ol-float-badge">
+      <strong>✕ ${item.badBadge}</strong>
+      <span>${item.goodBadge}</span>
+    </div>
+  `;
+
+  const badPrefix = currentLang === 'en' ? 'Problem:' : 'Thực trạng:';
+  const goodPrefix = currentLang === 'en' ? 'Solution:' : 'Giải pháp:';
+  const ctaLabel = currentLang === 'en' ? 'Choose a plan' : 'Xem bảng giá phù hợp';
+
+  copyEl.innerHTML = `
+    <h3 class="ol-copy-heading">${item.heading}</h3>
+    <div class="ol-compare-box">
+      <div class="ol-compare-row is-bad"><b>✕ ${badPrefix}</b> <span>${item.bad}</span></div>
+      <div class="ol-compare-row is-good"><b>✓ ${goodPrefix}</b> <span>${item.good}</span></div>
+    </div>
+    <div class="ol-pills">${item.pills.map((p) => `<span>${p}</span>`).join('')}</div>
+    <a href="#giai-phap" class="btn-tap">
+      <span>${ctaLabel}</span>
+      <span class="btn-tap-arrow" aria-hidden="true">↗</span>
+    </a>
+  `;
+
+  document.querySelectorAll('#ol-tabs .ol-tab').forEach((tBtn) => {
+    tBtn.classList.toggle('active', parseInt(tBtn.dataset.ol, 10) === activeOlIdx);
+  });
+}
+
+document.querySelectorAll('#ol-tabs .ol-tab').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    activeOlIdx = parseInt(btn.dataset.ol, 10) || 0;
+    renderOneLink();
+  });
+});
+
+// AI Builder: Auto-typing + 4-step build animation + Blur-to-Sharp 3-Card Showcase (VI/EN)
+const aiAutoPrompts = {
+  vi: [
+    'Tôi mở phòng Gym & PT 1-1, muốn website đăng ký tập thử và bảng giá gói tập',
+    'Tôi bán đồ ăn healthy eat-clean, muốn menu đặt món giao nhanh trong 15 phút',
+    'Tôi làm dịch vụ giao hàng nội thành 2H, cần trang web đặt đơn và tra cứu cước',
+  ],
+  en: [
+    'I run a Gym & PT studio and want a booking page for 30-day training plans',
+    'I sell healthy meal bowls and want a fast 15-minute online menu',
+    'I run an express delivery service and need a sleek shipping rate website',
+  ],
+};
+
+let aiUserTyping = false;
+let aiAutoTimer = null;
+let aiPromptIdx = 0;
+
+function extractAiTopic(raw) {
+  if (!raw) return '';
+  const cleaned = raw.trim();
+  if (cleaned.length <= 28) return cleaned;
+  const parts = cleaned.split(/,|với|và|cần|muốn|and|with|for/i);
+  return (parts[0] || cleaned).replace(/^(Tôi bán|Tôi mở|Tôi làm|Tôi kinh doanh|I run|I own|I sell)\s+/i, '').trim().slice(0, 32);
+}
+
+let aiRenderedLang = null;
+
+function renderAiBuilder(customText) {
+  const stage = document.getElementById('ai-fan-stage');
+  const input = document.getElementById('ai-prompt-input');
+  if (!stage) return;
+
+  const rawVal = customText !== undefined ? customText : (input ? input.value.trim() : '');
+  const topic = extractAiTopic(rawVal);
+  const isEn = currentLang === 'en';
+
+  const pubText = isEn ? 'Page published' : 'Đã xuất bản';
+  const gymTitle = topic && !/healthy|giao hàng|delivery|eat-clean/i.test(rawVal)
+    ? topic
+    : (isEn ? '30-day gym & PT plan' : 'Tập Gym & PT 1-1');
+  const gymSub = isEn ? 'Video & PT • 20 min a day' : 'Lịch tập & PT • 20 phút mỗi ngày';
+  const gymCta = isEn ? 'Start training • $49' : 'Đăng ký tập thử • 499K';
+  const floatCta = isEn ? 'Build my store with AI ↗' : 'Thiết kế web với VECTRA® ↗';
+
+  // Only build DOM once per language so images never flicker/reload during transitions
+  if (aiRenderedLang !== currentLang || !stage.querySelector('.ai-fan-card.is-center')) {
+    aiRenderedLang = currentLang;
+    stage.innerHTML = `
+      <!-- Left Card: Healthy Food -->
+      <a href="#giai-phap" class="ai-fan-card is-left">
+        <div class="ai-hl-head">
+          <span class="ai-hl-avatar">🥗</span>
+          <div class="ai-hl-brand">Green Kitchen<span>${isEn ? 'fresh healthy food' : 'đồ ăn healthy mỗi ngày'}</span></div>
+        </div>
+        <div class="ai-hl-title">GREEN<span>BOWL</span></div>
+        <div class="ai-hl-sub">${isEn ? '40 healthy bowls in 15 mins' : '40 món eat-clean giao nhanh 15 phút'}</div>
+        <div class="ai-hl-photo">
+          <img src="assets/demo-healthy.jpg" alt="Healthy Food Website" />
+          <span class="ai-hl-pill-time">${isEn ? '15 MIN ⏱' : '15 PHÚT ⏱'}</span>
+        </div>
+        <div class="ai-hl-chips">
+          <div class="ai-hl-chip c-lime">40<span>${isEn ? 'recipes' : 'món ăn'}</span></div>
+          <div class="ai-hl-chip c-pink">4<span>${isEn ? 'weekly plans' : 'gói tuần'}</span></div>
+        </div>
+      </a>
+
+      <!-- Center Card: Gym Studio -->
+      <a href="#giai-phap" class="ai-fan-card is-center">
+        <span class="ai-pub-badge"><i>✓</i> ${pubText}</span>
+        <div class="ai-gym-hero">
+          <div class="ai-gym-topbar">
+            <span class="ai-gym-name">APEX GYM</span>
+            <span class="ai-gym-menu">☰</span>
+          </div>
+          <img src="assets/demo-gym.jpg" alt="Gym Studio Website" />
+        </div>
+        <div class="ai-gym-body">
+          <div class="ai-gym-title" id="ai-gym-title">${gymTitle}</div>
+          <div class="ai-gym-sub">${gymSub}</div>
+
+          <span class="ai-gym-cta ai-stagger s1">${gymCta}</span>
+
+          <div class="ai-gym-stats ai-stagger s2">
+            <div><strong>30</strong><span>${isEn ? 'workouts' : 'bài tập'}</span></div>
+            <div><strong>2,400+</strong><span>${isEn ? 'members' : 'hội viên'}</span></div>
+            <div><strong>4.9 ★</strong><span>${isEn ? 'reviews' : 'đánh giá'}</span></div>
+          </div>
+
+          <div class="ai-gym-thumbs ai-stagger s3">
+            <div class="ai-gym-thumb-box"><img src="assets/demo-gym.jpg" alt="" /></div>
+            <div class="ai-gym-thumb-box"><strong>30</strong><span>${isEn ? 'days' : 'ngày'}</span></div>
+          </div>
+        </div>
+        <span class="ai-float-cta">${floatCta}</span>
+      </a>
+
+      <!-- Right Card: Express Delivery -->
+      <a href="#giai-phap" class="ai-fan-card is-right">
+        <div class="ai-dl-top">
+          <span>SWIFT EXPRESS</span>
+          <span>${isEn ? '210K parcels' : '210K đơn/tháng'}</span>
+        </div>
+        <div class="ai-dl-title">${isEn ? 'Express<br/><em>Delivery</em>' : 'Giao Hàng<br/><em>Siêu Tốc</em>'}</div>
+        <div class="ai-dl-photo">
+          <img src="assets/demo-delivery.jpg" alt="Express Delivery Website" />
+          <div class="ai-dl-price-circle">29K<span>${isEn ? 'PER ORDER' : 'MỖI ĐƠN'}</span></div>
+        </div>
+        <div class="ai-dl-rows">
+          <div><span>${isEn ? 'Same-day 2H' : 'Nội thành 2H'}</span><b>29.000đ</b></div>
+          <div><span>${isEn ? 'Next-day 24H' : 'Liên tỉnh 24H'}</span><b>45.000đ</b></div>
+        </div>
+      </a>
+    `;
+  } else {
+    const titleEl = document.getElementById('ai-gym-title');
+    if (titleEl) titleEl.textContent = gymTitle;
+  }
+}
+
+function runAiBuildSequence(textForCards) {
+  const stage = document.getElementById('ai-fan-stage');
+  const steps = document.querySelectorAll('#ai-steps .ai-step');
+  const timeEl = document.getElementById('ai-done-time');
+  if (!stage) return;
+
+  renderAiBuilder(textForCards);
+  stage.classList.add('is-building');
+  steps.forEach((s) => s.classList.remove('done'));
+  if (timeEl) timeEl.style.opacity = '0.3';
+
+  steps.forEach((s, i) => {
+    setTimeout(() => s.classList.add('done'), 160 * (i + 1));
+  });
+
+  setTimeout(() => {
+    requestAnimationFrame(() => {
+      stage.classList.remove('is-building');
+      if (timeEl) timeEl.style.opacity = '1';
+    });
+  }, 760);
+}
+
+function startAiAutoLoop() {
+  const input = document.getElementById('ai-prompt-input');
+  if (!input || aiUserTyping) return;
+  clearTimeout(aiAutoTimer);
+
+  const prompts = aiAutoPrompts[currentLang] || aiAutoPrompts.vi;
+  const targetText = prompts[aiPromptIdx % prompts.length];
+  let charIdx = 0;
+  input.value = '';
+
+  function typeNext() {
+    if (aiUserTyping) return;
+    if (charIdx <= targetText.length) {
+      input.value = targetText.slice(0, charIdx);
+      charIdx++;
+      aiAutoTimer = setTimeout(typeNext, 28);
+    } else {
+      runAiBuildSequence(targetText);
+      aiPromptIdx++;
+      aiAutoTimer = setTimeout(startAiAutoLoop, 4600);
+    }
+  }
+  typeNext();
+}
+
+const aiInput = document.getElementById('ai-prompt-input');
+const aiForm = document.getElementById('ai-builder-form');
+if (aiInput) {
+  aiInput.addEventListener('focus', () => {
+    if (!aiUserTyping) {
+      aiUserTyping = true;
+      clearTimeout(aiAutoTimer);
+    }
+  });
+  aiInput.addEventListener('input', () => {
+    aiUserTyping = true;
+    clearTimeout(aiAutoTimer);
+    renderAiBuilder();
+  });
+}
+if (aiForm) {
+  aiForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    aiUserTyping = true;
+    clearTimeout(aiAutoTimer);
+    runAiBuildSequence();
+  });
+}
+
+// Initialize language, cases, one-link tabs, AI builder, and blog API
+applyLanguage(currentLang, false);
+fetchExternalBlogAPI();
+startAiAutoLoop();

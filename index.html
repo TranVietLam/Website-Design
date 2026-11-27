@@ -7,7 +7,7 @@
   <meta name="description" content="VECTRA® cung cấp dịch vụ thiết kế website sang trọng, dễ hiểu, chuẩn tìm kiếm Google và tốc độ mở trang dưới 1 giây với chi phí chỉ từ 500.000đ." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Lora:ital,wght@0,600;0,700;1,600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/countup.js@2.8.0/dist/countUp.umd.js"></script>
   <link rel="stylesheet" href="styles.css" />
 
@@ -44,7 +44,7 @@
           <a href="#gioi-thieu" class="nav-link" data-i18n="nav_intro">Giới thiệu</a>
           <a href="#diem-dau" class="nav-link" data-i18n="nav_pain">Vấn đề</a>
           <a href="#giai-phap" class="nav-link" data-i18n="nav_pricing">Bảng giá</a>
-          <a href="#case-study" class="nav-link" data-i18n="nav_cases">Dự án thực tế</a>
+          <a href="#ai-builder" class="nav-link" data-i18n="nav_cases">Mẫu website</a>
           <a href="#blog-seo" class="nav-link" data-i18n="nav_blog">Blog kiến thức</a>
           <a href="#lien-he" class="nav-link" data-i18n="nav_contact">Liên hệ</a>
         </nav>
@@ -54,7 +54,10 @@
             <button type="button" class="lang-btn active" data-lang="vi" aria-pressed="true">VI</button>
             <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
           </div>
-          <a href="#dang-ky" class="btn btn-primary btn-sm" data-i18n="nav_cta">Bắt đầu dự án</a>
+          <a href="#dang-ky" class="btn-tap btn-tap-sm">
+            <span data-i18n="nav_cta">Bắt đầu dự án</span>
+            <span class="btn-tap-arrow" aria-hidden="true">↗</span>
+          </a>
           <button type="button" id="mobile-toggle" class="mobile-toggle" aria-label="Mở menu" aria-expanded="false">☰</button>
         </div>
       </div>
@@ -63,7 +66,7 @@
         <a href="#gioi-thieu" class="nav-link" data-i18n="nav_intro">Giới thiệu</a>
         <a href="#diem-dau" class="nav-link" data-i18n="nav_pain">Vấn đề</a>
         <a href="#giai-phap" class="nav-link" data-i18n="mnav_pricing">Giải pháp &amp; Bảng giá</a>
-        <a href="#case-study" class="nav-link" data-i18n="nav_cases">Dự án thực tế</a>
+        <a href="#ai-builder" class="nav-link" data-i18n="nav_cases">Mẫu website</a>
         <a href="#blog-seo" class="nav-link" data-i18n="nav_blog">Blog kiến thức</a>
         <a href="#dang-ky" class="nav-link" data-i18n="mnav_consult">Đăng ký tư vấn</a>
         <a href="#lien-he" class="nav-link" data-i18n="nav_contact">Liên hệ</a>
@@ -71,312 +74,160 @@
     </header>
 
     <main>
-      <!-- 2. GIỚI THIỆU -->
-      <section id="gioi-thieu" class="hero">
-        <div class="container hero-grid">
-          <div>
-            <div class="section-label" data-i18n="hero_label">Thiết kế Website Chuyên Nghiệp</div>
-            <h1 class="hero-title" data-i18n-html="hero_title">
-              Website tối giản.<br /><span>Chốt đơn tối đa.</span>
-            </h1>
-            <p class="hero-desc" data-i18n="hero_desc">
-              Thiết kế đẹp mắt, dễ lên Top Google và mở trang chưa tới 1 giây — giúp thương hiệu của bạn tạo niềm tin ngay từ lần đầu khách ghé thăm.
-            </p>
-            <div class="hero-cta">
-              <a href="#dang-ky" class="btn btn-primary" data-i18n="hero_cta_1">Nhận báo giá 24h →</a>
-              <a href="#case-study" class="btn btn-outline" data-i18n="hero_cta_2">Xem dự án thực tế</a>
-            </div>
-          </div>
+      <!-- 2. GIỚI THIỆU (TAPLINK STYLE HERO) -->
+      <section id="gioi-thieu" class="hero hero-tap">
+        <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
 
-          <!-- 3D Interactive Practical Website Mockup Stack -->
-          <div class="showcase-3d-stage reveal" id="metrics-3d-stage">
-            <div class="showcase-3d-card" id="metrics-3d-card">
-              <div class="telemetry-glare" id="metrics-glare" aria-hidden="true"></div>
-
-              <!-- Desktop Browser Preview -->
-              <div class="mock-browser">
-                <div class="mock-browser-bar">
-                  <div class="browser-dots"><i></i><i></i><i></i></div>
-                  <div class="mock-url">
-                    <span>🔒</span>
-                    <span data-i18n="sc_url">thuonghieucuaban.vn</span>
-                  </div>
-                  <span class="mock-status" data-i18n="sc_live">ONLINE</span>
-                </div>
-
-                <div class="mock-site-body">
-                  <div class="mock-site-nav">
-                    <div class="mock-site-brand">
-                      <i class="brand-dot"></i>
-                      <span data-i18n="sc_brand">THƯƠNG HIỆU</span>
-                    </div>
-                    <div class="mock-site-links">
-                      <span></span><span></span><span></span>
-                    </div>
-                  </div>
-
-                  <div class="mock-site-hero">
-                    <div class="mock-site-copy">
-                      <div class="mock-site-tag" data-i18n="sc_tag">Giao diện độc quyền</div>
-                      <div class="mock-site-heading" data-i18n="sc_heading">Sản phẩm nổi bật, khách nhìn là tin.</div>
-                      <div class="mock-site-btn" data-i18n="sc_btn">Đặt hàng ngay →</div>
-                    </div>
-                    <div class="mock-site-media">
-                      <img src="assets/case-study-1.jpg" alt="Website Preview" />
-                    </div>
-                  </div>
-
-                  <div class="mock-site-pillars">
-                    <span data-i18n="sc_p1">✓ Chuẩn Google</span>
-                    <span data-i18n="sc_p2">✓ Bảo mật SSL</span>
-                    <span data-i18n="sc_p3">✓ Tự chỉnh sửa</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Floating 3D Mobile Phone Preview -->
-              <div class="mock-phone" aria-hidden="true">
-                <div class="mock-phone-notch"></div>
-                <div class="mock-phone-screen">
-                  <div class="mock-phone-img">
-                    <img src="assets/case-study-1.jpg" alt="" />
-                  </div>
-                  <div class="mock-phone-lines">
-                    <span></span>
-                    <span class="short"></span>
-                  </div>
-                  <div class="mock-phone-cta" data-i18n="sc_phone_cta">Liên hệ Zalo</div>
-                </div>
-              </div>
-
-              <!-- Floating 3D Practical Badge -->
-              <div class="mock-float-pill">
-                <i class="live-dot"></i>
-                <span data-i18n="sc_pill">Tương thích Laptop &amp; Điện thoại</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 3. ĐIỂM ĐAU KHÁCH HÀNG -->
-      <section id="diem-dau" class="section">
         <div class="container">
-          <div class="section-label" data-i18n="pain_label">Thực trạng</div>
-          <h2 class="section-title" data-i18n="pain_title">4 lý do website chưa ra đơn.</h2>
-
-          <div class="pain-grid">
-            <!-- 01: Giao diện đại trà / giống hệt đối thủ -->
-            <div class="pain-card reveal">
-              <div class="pain-card-head">
-                <span class="pain-idx">01</span>
-                <span class="pain-badge badge-orange" data-i18n="pain_1_badge">5s mất niềm tin</span>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <div class="hero-title-wrap">
+                <h1 class="hero-title" data-i18n-html="hero_title">
+                  Biến khách ghé thăm<br />thành <em>khách mua hàng</em><br />ngay trên website
+                </h1>
               </div>
-              <div class="pain-visual pv-clone" aria-hidden="true">
-                <div class="pv-clone-stack">
-                  <div class="pv-mini-site pv-site-back">
-                    <div class="pv-dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
-                    <div class="pv-skel-hero"></div>
-                    <div class="pv-skel-row"><span></span><span></span></div>
-                  </div>
-                  <div class="pv-mini-site pv-site-mid">
-                    <div class="pv-dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
-                    <div class="pv-skel-hero"></div>
-                    <div class="pv-skel-row"><span></span><span></span></div>
-                  </div>
-                  <div class="pv-mini-site pv-site-front">
-                    <div class="pv-dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
-                    <div class="pv-skel-hero"></div>
-                    <div class="pv-skel-row"><span></span><span></span></div>
-                    <div class="pv-clone-stamp">100% CLONE</div>
-                  </div>
+
+              <p class="hero-desc" data-i18n="hero_desc">
+                Thiết kế đẹp mắt, dễ lên Top Google và mở trang chưa tới 1 giây — giúp thương hiệu của bạn tạo niềm tin ngay từ lần đầu khách ghé thăm.
+              </p>
+
+              <div class="hero-cta">
+                <a href="#dang-ky" class="btn-tap">
+                  <span data-i18n="hero_cta_1">Nhận báo giá 24h</span>
+                  <span class="btn-tap-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a href="#ai-builder" class="btn btn-outline" data-i18n="hero_cta_2">Xem mẫu website</a>
+              </div>
+
+              <div class="hero-proof">
+                <div class="hero-avatars" aria-hidden="true">
+                  <span style="background:#ea580c">M</span>
+                  <span style="background:#2563eb">H</span>
+                  <span style="background:#10b981">T</span>
+                  <span style="background:#7c3aed">A</span>
+                </div>
+                <div class="hero-proof-meta">
+                  <div class="hero-stars" aria-label="5 trên 5 sao">★★★★★</div>
+                  <div class="hero-proof-text" data-i18n="hero_proof">500+ website đã bàn giao</div>
                 </div>
               </div>
-              <h3 class="pain-heading" data-i18n="pain_1_h">Giao diện giống hệt đối thủ</h3>
             </div>
 
-            <!-- 02: Mở trang chậm -->
-            <div class="pain-card reveal">
-              <div class="pain-card-head">
-                <span class="pain-idx">02</span>
-                <span class="pain-badge badge-red" data-i18n="pain_2_badge">-20% khách quảng cáo</span>
+            <!-- Right Column: Vertical Taplink-style Phone Showcase + Floating Cards -->
+            <div class="tap-showcase reveal" id="metrics-3d-stage">
+              <div class="tap-top-chip">
+                <span>⚡</span>
+                <span data-i18n="sc_pill">Mở trang dưới 0.8s</span>
               </div>
-              <div class="pain-visual pv-speed" aria-hidden="true">
-                <div class="pv-browser">
-                  <div class="pv-browser-bar">
-                    <div class="pv-dots"><span class="d-r"></span><span class="d-y"></span><span class="d-g"></span></div>
-                    <div class="pv-url-bar">⌛ 4.8s...</div>
+
+              <div class="tap-stage-inner" id="metrics-3d-card">
+                <div class="tap-phone-card">
+                  <div class="tap-phone-cover">
+                    <img src="assets/case-study-1.jpg" alt="Website mẫu VECTRA" />
+                    <span class="tap-phone-brand" data-i18n="sc_brand">THƯƠNG HIỆU</span>
                   </div>
-                  <div class="pv-loader-stage">
-                    <div class="pv-spinner"></div>
-                    <div class="pv-progress-track">
-                      <div class="pv-progress-fill"></div>
+                  <div class="tap-phone-body">
+                    <div class="tap-phone-heading" data-i18n="sc_heading">Sản phẩm nổi bật, khách nhìn là tin.</div>
+                    <p class="tap-phone-sub" data-i18n="sc_tag">Giao diện độc quyền • Chuẩn Google</p>
+                    <a href="#dang-ky" class="tap-phone-btn" data-i18n="sc_btn">Đặt hàng ngay →</a>
+
+                    <div class="tap-icon-row" aria-hidden="true">
+                      <span>🌐</span><span>⚡</span><span>🔍</span><span>💬</span>
+                    </div>
+
+                    <div class="tap-mini-stats">
+                      <div><strong>0.7s</strong><span data-i18n="sc_p1">Tốc độ</span></div>
+                      <div><strong>+240%</strong><span data-i18n="sc_p2">Đơn hàng</span></div>
                     </div>
                   </div>
-                  <div class="pv-bounce-tag">💸 -20% BOUNCE</div>
                 </div>
-              </div>
-              <h3 class="pain-heading" data-i18n="pain_2_h">Mở trang chậm, rớt đơn quảng cáo</h3>
-            </div>
 
-            <!-- 03: Khó xem trên điện thoại -->
-            <div class="pain-card reveal">
-              <div class="pain-card-head">
-                <span class="pain-idx">03</span>
-                <span class="pain-badge badge-amber" data-i18n="pain_3_badge">75% thoát trang</span>
-              </div>
-              <div class="pain-visual pv-mobile" aria-hidden="true">
-                <div class="pv-phone">
-                  <div class="pv-phone-notch"></div>
-                  <div class="pv-phone-screen">
-                    <div class="pv-overflow-block">
-                      <div class="pv-tiny-line w120"></div>
-                      <div class="pv-tiny-line w140"></div>
-                      <div class="pv-tiny-line w110"></div>
-                      <div class="pv-tiny-btn">MUA NGAY</div>
-                    </div>
-                    <div class="pv-tap-miss">✕</div>
+                <!-- Floating Card Top-Right: Revenue Chart -->
+                <div class="tap-float-card tap-float-sales" aria-hidden="true">
+                  <div class="tf-label" data-i18n="tf_sales_label">Doanh thu tháng</div>
+                  <div class="tf-val">184.5M</div>
+                  <div class="tf-bars">
+                    <span style="height:35%"></span>
+                    <span style="height:50%"></span>
+                    <span style="height:45%"></span>
+                    <span style="height:70%"></span>
+                    <span style="height:85%"></span>
+                    <span class="hi" style="height:100%"></span>
                   </div>
                 </div>
-              </div>
-              <h3 class="pain-heading" data-i18n="pain_3_h">Rối mắt, khó bấm trên điện thoại</h3>
-            </div>
 
-            <!-- 04: Mất hút trên Google & không đo được -->
-            <div class="pain-card reveal">
-              <div class="pain-card-head">
-                <span class="pain-idx">04</span>
-                <span class="pain-badge badge-indigo" data-i18n="pain_4_badge">Top #99+</span>
-              </div>
-              <div class="pain-visual pv-seo" aria-hidden="true">
-                <div class="pv-search-card">
-                  <div class="pv-search-bar">
-                    <span class="pv-g-dots"><i></i><i></i><i></i><i></i></span>
-                    <span class="pv-search-query">dịch vụ của bạn...</span>
+                <!-- Floating Card Bottom-Left: New Order Notification -->
+                <div class="tap-float-card tap-float-order" aria-hidden="true">
+                  <span class="tf-order-dot"></span>
+                  <div>
+                    <div class="tf-order-tag" data-i18n="tf_order_tag">Đơn hàng mới</div>
+                    <div class="tf-order-name" data-i18n="tf_order_name">Gói Doanh Nghiệp</div>
+                    <div class="tf-order-price">+3.000.000đ</div>
                   </div>
-                  <div class="pv-serp-list">
-                    <div class="pv-serp-item is-top"><span>#1</span><b>Đối thủ A</b></div>
-                    <div class="pv-serp-item is-top"><span>#2</span><b>Đối thủ B</b></div>
-                    <div class="pv-serp-item is-missing"><span>#99</span><b>Bạn (Mất hút)</b></div>
-                  </div>
-                  <svg class="pv-flatline" viewBox="0 0 120 20" fill="none">
-                    <path d="M2 5 L34 8 L64 14 L92 17 L118 17" stroke="#ef4444" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
                 </div>
               </div>
-              <h3 class="pain-heading" data-i18n="pain_4_h">Mất hút trên Google &amp; mù số liệu</h3>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- 4. GIẢI PHÁP & BẢNG GIÁ -->
+      <!-- 3. VẤN ĐỀ & GIẢI PHÁP (ONE LINK STYLE) -->
+      <section id="diem-dau" class="section one-link-section">
+        <div class="container">
+          <div class="one-link-header reveal">
+            <div class="section-label" data-i18n="ol_label">Thực trạng &amp; Giải pháp</div>
+            <h2 class="section-title ol-main-title" data-i18n-html="ol_title">Một giải pháp trọn vẹn<br />cho <em>mọi điểm nghẽn</em></h2>
+          </div>
+
+          <div class="ol-tabs" id="ol-tabs" role="tablist">
+            <button type="button" class="ol-tab active" data-ol="0" data-i18n="ol_t0">Giao diện độc quyền</button>
+            <button type="button" class="ol-tab" data-ol="1" data-i18n="ol_t1">Tốc độ dưới 1s</button>
+            <button type="button" class="ol-tab" data-ol="2" data-i18n="ol_t2">Chuẩn điện thoại</button>
+            <button type="button" class="ol-tab" data-ol="3" data-i18n="ol_t3">Lên Top Google</button>
+          </div>
+
+          <div class="ol-card reveal" id="ol-card">
+            <div class="ol-visual-col" id="ol-visual"></div>
+            <div class="ol-copy-col" id="ol-copy"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3.5. AI BUILDER (TÙY BIẾN 3 SẢN PHẨM THEO Ô NHẬP) -->
+      <section id="ai-builder" class="section ai-builder-section">
+        <div class="container">
+          <div class="ai-header reveal">
+            <div class="ai-pill-tag">✦ AI BUILDER</div>
+            <h2 class="section-title ai-main-title" data-i18n-html="ai_title">Mô tả ngành hàng của bạn,<br /><em>VECTRA® dựng mẫu ngay</em></h2>
+          </div>
+
+          <form id="ai-builder-form" class="ai-prompt-wrap reveal">
+            <div class="ai-prompt-box">
+              <input id="ai-prompt-input" type="text" autocomplete="off" placeholder="Ví dụ: Shop thời trang nữ, nha khoa thẩm mỹ, quán cà phê..." data-i18n-placeholder="ai_ph" />
+              <button type="submit" id="ai-create-btn" class="btn-tap">
+                <span>✦</span>
+                <span data-i18n="ai_btn">Tạo mẫu</span>
+              </button>
+            </div>
+            <div class="ai-steps" id="ai-steps">
+              <span class="ai-step done" data-step="0"><i>✓</i> <b data-i18n="ai_s1">Ngành hàng</b></span>
+              <span class="ai-step done" data-step="1"><i>✓</i> <b data-i18n="ai_s2">Giao diện</b></span>
+              <span class="ai-step done" data-step="2"><i>✓</i> <b data-i18n="ai_s3">Nội dung</b></span>
+              <span class="ai-step done" data-step="3"><i>✓</i> <b data-i18n="ai_s4">Chốt đơn &amp; Zalo</b></span>
+              <span class="ai-done-time" id="ai-done-time" data-i18n="ai_time">Xong trong 0.8s</span>
+            </div>
+          </form>
+
+          <div class="ai-fan-stage reveal" id="ai-fan-stage"></div>
+        </div>
+      </section>
+
+      <!-- 4. BẢNG GIÁ -->
       <section id="giai-phap" class="section">
         <div class="container">
-          <div class="section-label" data-i18n="sol_label">Giải pháp VECTRA®</div>
+          <div class="section-label" data-i18n="sol_label">Bảng giá ưu đãi</div>
           <h2 class="section-title" data-i18n="sol_title">Đẹp mắt, dễ dùng và ra đơn thật.</h2>
-
-          <div class="solution-grid">
-            <!-- 01: Thiết kế riêng -->
-            <div class="solution-card reveal">
-              <div class="sol-card-head">
-                <span class="solution-num" data-i18n="sol_1_n">01 / GIAO DIỆN</span>
-                <span class="sol-pill sol-pill-orange">★ Brand UI</span>
-              </div>
-              <div class="sol-visual sv-brand" aria-hidden="true">
-                <div class="sv-canvas">
-                  <div class="sv-palette">
-                    <span class="c1"></span><span class="c2"></span><span class="c3"></span>
-                  </div>
-                  <div class="sv-hero-card">
-                    <div class="sv-hero-img"></div>
-                    <div class="sv-hero-lines">
-                      <span class="l1"></span>
-                      <span class="l2"></span>
-                      <span class="sv-cta-chip">Đặt ngay →</span>
-                    </div>
-                  </div>
-                  <div class="sv-sparkle">✦</div>
-                </div>
-              </div>
-              <h3 class="solution-title" data-i18n="sol_1_h">Thiết kế riêng theo thương hiệu</h3>
-              <p class="solution-desc" data-i18n="sol_1_p">Bố cục độc quyền, làm nổi bật sản phẩm ngay từ giây đầu.</p>
-            </div>
-
-            <!-- 02: Tốc độ 1s -->
-            <div class="solution-card reveal">
-              <div class="sol-card-head">
-                <span class="solution-num" data-i18n="sol_2_n">02 / TỐC ĐỘ</span>
-                <span class="sol-pill sol-pill-green">⚡ 0.8s Load</span>
-              </div>
-              <div class="sol-visual sv-speed" aria-hidden="true">
-                <div class="sv-speed-box">
-                  <div class="sv-speed-top">
-                    <span class="sv-bolt">⚡</span>
-                    <span class="sv-score">99/100</span>
-                  </div>
-                  <div class="sv-fast-track">
-                    <div class="sv-fast-fill"></div>
-                  </div>
-                  <div class="sv-device-row">
-                    <span>💻 Desktop</span>
-                    <span>📱 4G Mobile</span>
-                  </div>
-                </div>
-              </div>
-              <h3 class="solution-title" data-i18n="sol_2_h">Mở trang mượt trong 1 giây</h3>
-              <p class="solution-desc" data-i18n="sol_2_p">Hiển thị tức thì trên cả máy tính lẫn điện thoại 4G.</p>
-            </div>
-
-            <!-- 03: Lên top Google -->
-            <div class="solution-card reveal">
-              <div class="sol-card-head">
-                <span class="solution-num" data-i18n="sol_3_n">03 / LÊN TOP GOOGLE</span>
-                <span class="sol-pill sol-pill-blue">▲ Top #1</span>
-              </div>
-              <div class="sol-visual sv-seo" aria-hidden="true">
-                <div class="sv-seo-card">
-                  <div class="sv-rank-winner">
-                    <span class="sv-rank-badge">#1</span>
-                    <span class="sv-rank-name">Website của bạn</span>
-                    <span class="sv-rank-up">▲</span>
-                  </div>
-                  <div class="sv-bars">
-                    <span class="b1"></span>
-                    <span class="b2"></span>
-                    <span class="b3"></span>
-                    <span class="b4"></span>
-                    <span class="b5"></span>
-                  </div>
-                </div>
-              </div>
-              <h3 class="solution-title" data-i18n="sol_3_h">Chuẩn tìm kiếm Google &amp; Blog</h3>
-              <p class="solution-desc" data-i18n="sol_3_p">Cấu trúc chuẩn SEO &amp; Blog hút khách tự nhiên mỗi ngày.</p>
-            </div>
-
-            <!-- 04: Tự chủ & Bảo hành -->
-            <div class="solution-card reveal">
-              <div class="sol-card-head">
-                <span class="solution-num" data-i18n="sol_4_n">04 / TỰ CHỦ</span>
-                <span class="sol-pill sol-pill-purple">🛡️ 12 Tháng</span>
-              </div>
-              <div class="sol-visual sv-admin" aria-hidden="true">
-                <div class="sv-admin-panel">
-                  <div class="sv-admin-row">
-                    <span>🖼️ Ảnh sản phẩm</span>
-                    <span class="sv-toggle is-on"><i></i></span>
-                  </div>
-                  <div class="sv-admin-row">
-                    <span>🏷️ Cập nhật giá</span>
-                    <span class="sv-edit-pill">Đã lưu ✓</span>
-                  </div>
-                  <div class="sv-shield-tag">🛡️ Bảo hành kỹ thuật 12 tháng</div>
-                </div>
-              </div>
-              <h3 class="solution-title" data-i18n="sol_4_h">Dễ tự chỉnh sửa &amp; Bảo hành 12 tháng</h3>
-              <p class="solution-desc" data-i18n="sol_4_p">Tự thay ảnh, sửa giá dễ dàng và hỗ trợ kỹ thuật trọn năm.</p>
-            </div>
-          </div>
 
           <!-- Bảng giá hấp dẫn mới -->
           <div class="pricing-header-note reveal">
@@ -446,27 +297,6 @@
                 </ul>
               </div>
               <button type="button" class="btn btn-outline select-pkg" data-pkg="Website Cao Cấp (5.000.000VNĐ)" data-i18n="pkg3_btn">Nhận ưu đãi gói 5 Triệu</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. CASE STUDY — TRÌNH DIỄN WEBSITE THẬT -->
-      <section id="case-study" class="section">
-        <div class="container">
-          <div class="section-label" data-i18n="case_label">Sản phẩm thực tế</div>
-          <h2 class="section-title" data-i18n="case_title">Trải nghiệm trực tiếp các mẫu website đã bàn giao.</h2>
-          <p class="section-sub" data-i18n="case_sub">Chọn dự án bên trái, cuộn và bấm thử trực tiếp trên khung trình duyệt bên phải (hỗ trợ xem cả Máy tính &amp; Điện thoại).</p>
-
-          <div class="case-split reveal">
-            <div id="case-list" class="case-list"></div>
-            <div class="case-preview">
-              <div id="case-visual" class="case-live-stage"></div>
-              <div class="case-metrics-strip" id="case-metrics-strip"></div>
-              <div class="case-preview-footer">
-                <p id="case-summary" class="pain-text"></p>
-                <a href="#dang-ky" class="btn btn-primary btn-sm" data-i18n="case_cta">Làm website như mẫu này →</a>
-              </div>
             </div>
           </div>
         </div>
@@ -595,7 +425,7 @@
           </div>
           <div class="footer-nav-links">
             <a href="#giai-phap" class="nav-link" data-i18n="nav_pricing">Bảng giá</a>
-            <a href="#case-study" class="nav-link" data-i18n="fnav_cases">Dự án</a>
+            <a href="#ai-builder" class="nav-link" data-i18n="fnav_cases">Mẫu web</a>
             <a href="#blog-seo" class="nav-link" data-i18n="fnav_blog">Blog</a>
             <a href="#gioi-thieu" class="nav-link footer-top-btn" data-i18n="fnav_top">Về đầu trang ↑</a>
           </div>
