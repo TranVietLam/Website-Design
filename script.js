@@ -699,9 +699,10 @@ const localBlogData = {
       category: 'Bán hàng Online',
       date: '2026-11-22',
       readTime: '3 phút đọc',
+      image: 'assets/case-study-1.jpg',
       isExternal: false,
-      title: 'Làm sao để website mở nhanh dưới 1 giây và giữ khách ở lại mua hàng?',
-      excerpt: 'Giải thích dễ hiểu cách tối ưu hình ảnh và bố cục để khách bấm vào là xem được ngay trên điện thoại.',
+      title: 'Mở trang 0.7s — Giữ 90% khách ở lại chốt đơn',
+      excerpt: 'Tối ưu ảnh siêu nhẹ & nút đặt hàng 2 chạm trên điện thoại.',
       tags: ['#BanHangOnline', '#TocDoWeb', '#TangDonHang'],
       body: `
         <p>Khách hàng lướt điện thoại rất ít kiên nhẫn. Nếu bấm vào link sản phẩm mà màn hình trắng xóa quá 3 giây, hơn một nửa số khách sẽ bấm thoát ngay lập tức.</p>
@@ -717,9 +718,10 @@ const localBlogData = {
       category: 'Lên Top Google',
       date: '2026-11-18',
       readTime: '4 phút đọc',
+      image: 'assets/case-study-2.jpg',
       isExternal: false,
-      title: 'Cách làm website tự lên Top Google để có khách đều đặn không cần chạy quảng cáo',
-      excerpt: '3 nguyên tắc đơn giản giúp Google hiểu rõ dịch vụ của bạn và ưu tiên giới thiệu tới đúng người đang tìm mua.',
+      title: 'Tự lên Top Google — Có khách đều không cần chạy Ads',
+      excerpt: 'Cấu trúc chuẩn SEO & Blog kéo khách tìm kiếm tự nhiên mỗi ngày.',
       tags: ['#LenTopGoogle', '#KhachTuNhien', '#BlogSEO'],
       body: `
         <p>Nhiều chủ cửa hàng nghĩ muốn có khách trên mạng bắt buộc phải chạy quảng cáo liên tục. Thực tế, một website có mục Blog chia sẻ kiến thức hữu ích sẽ mang về khách hàng miễn phí mỗi ngày.</p>
@@ -735,9 +737,10 @@ const localBlogData = {
       category: 'Thiết kế đẹp',
       date: '2026-11-12',
       readTime: '3 phút đọc',
+      image: 'assets/case-study-3.jpg',
       isExternal: false,
-      title: 'Bí quyết trình bày trang web gọn đẹp để khách nhìn là muốn đặt hàng ngay',
-      excerpt: 'Tại sao những trang web ít chữ, hình ảnh rõ ràng và nút gọi nổi bật lại bán được nhiều hàng hơn?',
+      title: 'Giao diện tối giản — Nhìn phát muốn đặt hàng ngay',
+      excerpt: 'Ít chữ, ảnh sản phẩm sắc nét & form liên hệ siêu gọn.',
       tags: ['#ThietKeDep', '#ChotDonNhanh', '#TraiNghiemKhachHang'],
       body: `
         <p>Một sai lầm phổ biến là nhồi nhét quá nhiều chữ và màu sắc sặc sỡ lên trang chủ. Điều này khiến người xem bị ngợp và không biết nên bấm vào đâu.</p>
@@ -755,9 +758,10 @@ const localBlogData = {
       category: 'Online Sales',
       date: '2026-11-22',
       readTime: '3 min read',
+      image: 'assets/case-study-1.jpg',
       isExternal: false,
-      title: 'How to make your website load under 1 second and keep buyers from bouncing',
-      excerpt: 'A straightforward breakdown of image optimization and above-the-fold layout for instant mobile viewing.',
+      title: '0.7s Page Load — Keep 90% of Buyers Until Checkout',
+      excerpt: 'Lightweight product visuals & 2-tap mobile ordering.',
       tags: ['#OnlineSales', '#WebSpeed', '#HigherOrders'],
       body: `
         <p>Mobile shoppers have little patience. If tapping a product link results in a blank screen for more than 3 seconds, over half of your potential buyers will leave immediately.</p>
@@ -773,9 +777,10 @@ const localBlogData = {
       category: 'Google SEO',
       date: '2026-11-18',
       readTime: '4 min read',
+      image: 'assets/case-study-2.jpg',
       isExternal: false,
-      title: 'How to rank on Google organically and earn daily leads without constant ad spend',
-      excerpt: '3 simple rules that help Google understand your business and recommend you to ready-to-buy searchers.',
+      title: 'Rank #1 on Google — Daily Organic Leads Without Ads',
+      excerpt: 'Built-in SEO schema & Blog that captures search traffic.',
       tags: ['#GoogleSEO', '#OrganicLeads', '#ContentMarketing'],
       body: `
         <p>Many business owners assume online sales require non-stop ad budgets. In reality, a well-structured website paired with a helpful Knowledge Blog attracts high-intent leads for free every single day.</p>
@@ -791,9 +796,10 @@ const localBlogData = {
       category: 'UI Design',
       date: '2026-11-12',
       readTime: '3 min read',
+      image: 'assets/case-study-3.jpg',
       isExternal: false,
-      title: 'Minimalist layout secrets that make visitors trust your brand and place orders',
-      excerpt: 'Why clean typography, generous whitespace, and clear CTAs consistently outperform cluttered websites.',
+      title: 'Minimalist UI — Instant Trust & 2x Higher Orders',
+      excerpt: 'Less text, crisp visuals & frictionless lead capture.',
       tags: ['#MinimalistUI', '#ConversionDesign', '#UserExperience'],
       body: `
         <p>A common mistake is cramming too much text and loud colors onto the homepage. Visual overload overwhelms visitors and makes them hesitate.</p>
@@ -820,12 +826,14 @@ const apiDotEl = document.getElementById('blog-api-dot');
 
 function rebuildBlogPosts() {
   const locals = localBlogData[currentLang] || localBlogData.vi;
-  const apiMapped = externalRawItems.map((item) => ({
+  const fallbackImages = ['assets/case-study-1.jpg', 'assets/case-study-2.jpg', 'assets/case-study-3.jpg'];
+  const apiMapped = externalRawItems.map((item, idx) => ({
     id: 'api-' + item.id,
     catKey: 'api',
     category: t('cat_api'),
     date: (item.published_at || '').slice(0, 10) || '2026-11-24',
     readTime: `${item.reading_time_minutes || 3} ${t('api_min_read')}`,
+    image: item.cover_image || item.social_image || fallbackImages[idx % fallbackImages.length],
     isExternal: true,
     url: item.url,
     title: item.title,
@@ -902,15 +910,21 @@ function renderBlog() {
   }
   blogGridEl.innerHTML = list.map((p) => `
     <article class="blog-card" data-post="${p.id}">
-      <div>
-        <div class="blog-meta">
-          <span class="blog-cat">${p.category}</span>
-          ${p.isExternal ? '<span class="blog-source-pill">API LIVE</span>' : `<span>${p.readTime}</span>`}
-        </div>
-        <h3 class="blog-title" style="margin-top:12px;">${p.title}</h3>
-        <p class="blog-excerpt" style="margin-top:8px;">${p.excerpt}</p>
+      <div class="blog-thumb">
+        <img src="${p.image || 'assets/case-study-1.jpg'}" alt="${p.title}" loading="lazy" />
+        <span class="blog-thumb-badge">${p.isExternal ? 'API LIVE' : p.category}</span>
       </div>
-      <div class="blog-read-link">${p.isExternal ? t('blog_read_api') : t('blog_read')}</div>
+      <div class="blog-card-body">
+        <div>
+          <div class="blog-meta">
+            <span class="blog-cat">${p.category}</span>
+            <span>${p.readTime}</span>
+          </div>
+          <h3 class="blog-title" style="margin-top:8px;">${p.title}</h3>
+          <p class="blog-excerpt" style="margin-top:6px;">${p.excerpt}</p>
+        </div>
+        <div class="blog-read-link">${p.isExternal ? t('blog_read_api') : t('blog_read')}</div>
+      </div>
     </article>
   `).join('');
 
