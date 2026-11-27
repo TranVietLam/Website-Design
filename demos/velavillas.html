@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VELA VILLAS — Biệt Thự Nghỉ Dưỡng Ven Biển</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.5; }
+    header { padding: 14px 24px; background: #fff; border-bottom: 1px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+    .logo { font-weight: 700; letter-spacing: 0.1em; font-size: 15px; color: #0f766e; }
+    .btn-teal { background: #0f766e; color: #fff; border: none; padding: 9px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; cursor: pointer; }
+    .hero { max-width: 1020px; margin: 24px auto; padding: 0 24px; }
+    .banner { border-radius: 22px; background: linear-gradient(135deg, #134e4a 0%, #0f766e 55%, #14b8a6 100%); color: #fff; padding: 48px 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: center; }
+    .banner h1 { font-size: clamp(26px, 4vw, 40px); line-height: 1.15; margin-bottom: 12px; }
+    .banner p { opacity: 0.9; font-size: 15px; margin-bottom: 20px; }
+    .stat-box { background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.25); border-radius: 16px; padding: 20px; backdrop-filter: blur(10px); }
+    .stat-box div { margin-bottom: 10px; font-size: 14px; }
+    .stat-box strong { font-size: 22px; display: block; }
+    .grid { max-width: 1020px; margin: 28px auto 48px; padding: 0 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 18px; }
+    .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 18px; overflow: hidden; }
+    .thumb { height: 150px; padding: 14px; display: flex; align-items: flex-end; color: #fff; font-weight: 700; font-size: 12px; }
+    .t1 { background: linear-gradient(135deg, #0d9488, #2dd4bf); }
+    .t2 { background: linear-gradient(135deg, #0284c7, #38bdf8); }
+    .t3 { background: linear-gradient(135deg, #0f766e, #065f46); }
+    .c-body { padding: 16px; }
+    .c-body h3 { font-size: 16px; margin-bottom: 4px; }
+    .c-meta { font-size: 12px; color: #64748b; margin-bottom: 12px; }
+    .c-foot { display: flex; justify-content: space-between; align-items: center; }
+    .price { font-weight: 700; color: #0f766e; font-size: 15px; }
+    @media (max-width: 680px) {
+      .banner { grid-template-columns: 1fr; padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VELA VILLAS</div>
+    <button class="btn-teal" onclick="alert('Đã mở lịch hẹn xem biệt thự mẫu qua Zalo!')">Đặt lịch xem nhà</button>
+  </header>
+
+  <div class="hero">
+    <div class="banner">
+      <div>
+        <h1>Biệt thự biển riêng tư giữa thiên nhiên nguyên bản.</h1>
+        <p>Sở hữu lâu dài • Hồ bơi vô cực riêng • Cam kết cho thuê sinh lời 8%/năm.</p>
+        <button class="btn-teal" style="background:#fff;color:#0f766e;padding:12px 22px;" onclick="alert('Đã gửi bảng giá & mặt bằng chi tiết!')">Tải bảng giá &amp; mặt bằng →</button>
+      </div>
+      <div class="stat-box">
+        <div><strong>Chỉ từ 12.5 Tỷ</strong>Thanh toán giãn tiến độ 24 tháng</div>
+        <div style="margin-bottom:0;"><strong>100% View Biển</strong>Bàn giao full nội thất cao cấp</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="thumb t1">OCEANFRONT • 320m²</div>
+      <div class="c-body">
+        <h3>Villa Hướng Biển 3PN</h3>
+        <div class="c-meta">Hồ bơi riêng 45m² • Sân vườn</div>
+        <div class="c-foot"><span class="price">12.5 Tỷ</span><button class="btn-teal" onclick="alert('Đã chọn Villa 3PN')">Xem chi tiết</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb t2">CORAL BAY • 410m²</div>
+      <div class="c-body">
+        <h3>Villa Góc 4PN VIP</h3>
+        <div class="c-meta">2 mặt thoáng • Bến du thuyền</div>
+        <div class="c-foot"><span class="price">16.8 Tỷ</span><button class="btn-teal" onclick="alert('Đã chọn Villa 4PN')">Xem chi tiết</button></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="thumb t3">SKY RIDGE • 520m²</div>
+      <div class="c-body">
+        <h3>Dinh Thự Đồi 5PN</h3>
+        <div class="c-meta">Tầm nhìn 270° • Thang máy riêng</div>
+        <div class="c-foot"><span class="price">24.0 Tỷ</span><button class="btn-teal" onclick="alert('Đã chọn Dinh Thự 5PN')">Xem chi tiết</button></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

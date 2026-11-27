@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAISON AURELIA — Thời Trang Thiết Kế Cao Cấp</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #faf8f5; color: #1c1917; line-height: 1.5; }
+    header { position: sticky; top: 0; z-index: 10; background: rgba(250,248,245,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid #e7e5e4; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-weight: 700; letter-spacing: 0.14em; font-size: 15px; }
+    nav { display: flex; gap: 18px; font-size: 13px; color: #57534e; }
+    nav a { text-decoration: none; color: inherit; }
+    .cart-pill { background: #1c1917; color: #fff; font-size: 12px; font-weight: 600; padding: 7px 14px; border-radius: 999px; border: none; cursor: pointer; }
+    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; max-width: 1040px; margin: 0 auto; padding: 40px 24px; }
+    .tag { display: inline-block; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #b45309; background: #fef3c7; padding: 4px 10px; border-radius: 999px; font-weight: 600; margin-bottom: 14px; }
+    h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.15; font-weight: 700; margin-bottom: 14px; }
+    .hero p { color: #57534e; font-size: 15px; margin-bottom: 22px; max-width: 440px; }
+    .btn-dark { display: inline-block; background: #1c1917; color: #fff; padding: 12px 24px; border-radius: 999px; text-decoration: none; font-size: 14px; font-weight: 600; border: none; cursor: pointer; }
+    .hero-visual { height: 320px; border-radius: 20px; background: linear-gradient(145deg, #292524 0%, #57534e 55%, #a8a29e 100%); position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 22px; color: #fff; box-shadow: 0 24px 48px -18px rgba(28,25,23,0.35); }
+    .hero-visual::after { content: 'AUTUMN / WINTER 2026'; position: absolute; top: 20px; right: 20px; font-size: 10px; letter-spacing: 0.15em; opacity: 0.75; }
+    .hero-card { background: rgba(255,255,255,0.14); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.22); border-radius: 14px; padding: 14px 16px; width: 100%; display: flex; justify-content: space-between; align-items: center; }
+    .section { max-width: 1040px; margin: 0 auto; padding: 24px 24px 56px; }
+    .sec-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 22px; }
+    .sec-head h2 { font-size: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px; }
+    .product { background: #fff; border: 1px solid #e7e5e4; border-radius: 16px; overflow: hidden; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .product:hover { transform: translateY(-4px); box-shadow: 0 14px 28px -12px rgba(28,25,23,0.12); }
+    .p-img { height: 180px; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; letter-spacing: 0.08em; color: #fff; }
+    .p1 { background: linear-gradient(135deg, #44403c, #78716c); }
+    .p2 { background: linear-gradient(135deg, #7c2d12, #c2410c); }
+    .p3 { background: linear-gradient(135deg, #1e293b, #475569); }
+    .p4 { background: linear-gradient(135deg, #713f12, #ca8a04); }
+    .p-body { padding: 14px 16px; }
+    .p-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+    .p-price { color: #b45309; font-weight: 700; font-size: 14px; margin-bottom: 12px; }
+    .p-add { width: 100%; padding: 9px; border-radius: 10px; border: 1px solid #d6d3d1; background: #faf8f5; font-weight: 600; font-size: 13px; cursor: pointer; transition: 0.15s; }
+    .p-add:hover { background: #1c1917; color: #fff; border-color: #1c1917; }
+    footer { text-align: center; padding: 24px; font-size: 12px; color: #78716c; border-top: 1px solid #e7e5e4; }
+    @media (max-width: 700px) {
+      .hero { grid-template-columns: 1fr; padding: 24px 16px; }
+      nav { display: none; }
+      .hero-visual { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">MAISON AURELIA</div>
+    <nav>
+      <a href="#new">Bộ sưu tập</a>
+      <a href="#new">Áo khoác</a>
+      <a href="#new">Đầm thiết kế</a>
+    </nav>
+    <button class="cart-pill" id="cart-btn">Giỏ hàng (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <section class="hero">
+    <div>
+      <span class="tag">BST Thu Đông 2026</span>
+      <h1>Thanh lịch tối giản. Chạm là nhớ.</h1>
+      <p>Chất liệu lụa tơ tằm và len cashmere tuyển chọn, cắt may thủ công vừa vặn với vóc dáng phụ nữ Việt.</p>
+      <a href="#new" class="btn-dark">Khám phá sản phẩm →</a>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div>
+          <div style="font-size:13px;font-weight:600;">Áo Blazer Cashmere</div>
+          <div style="font-size:12px;opacity:0.85;">2.850.000đ • Freeship toàn quốc</div>
+        </div>
+        <button class="cart-pill" style="background:#fff;color:#1c1917;" onclick="addCart('Blazer Cashmere')">+ Thêm</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="new" class="section">
+    <div class="sec-head">
+      <h2>Sản phẩm bán chạy</h2>
+      <span style="font-size:13px;color:#78716c;">Đặt hàng nhanh 2 bước</span>
+    </div>
+    <div class="grid">
+      <div class="product">
+        <div class="p-img p1">TRENCH COAT</div>
+        <div class="p-body">
+          <div class="p-name">Áo Khoác Dáng Dài Sand</div>
+          <div class="p-price">3.200.000đ</div>
+          <button class="p-add" onclick="addCart('Áo Khoác Sand')">+ Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="p-img p2">SILK DRESS</div>
+        <div class="p-body">
+          <div class="p-name">Đầm Lụa Terracotta</div>
+          <div class="p-price">2.450.000đ</div>
+          <button class="p-add" onclick="addCart('Đầm Lụa Terracotta')">+ Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="p-img p3">WOOL SUIT</div>
+        <div class="p-body">
+          <div class="p-name">Set Vest Công Sở Slate</div>
+          <div class="p-price">2.990.000đ</div>
+          <button class="p-add" onclick="addCart('Set Vest Slate')">+ Thêm vào giỏ</button>
+        </div>
+      </div>
+      <div class="product">
+        <div class="p-img p4">CASHMERE KNIT</div>
+        <div class="p-body">
+          <div class="p-name">Áo Len Cổ Lọ Gold</div>
+          <div class="p-price">1.650.000đ</div>
+          <button class="p-add" onclick="addCart('Áo Len Gold')">+ Thêm vào giỏ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>MAISON AURELIA © 2026 — Demo Website bán hàng thời trang chuẩn tốc độ 0.7s</footer>
+
+  <script>
+    let count = 0;
+    function addCart(name) {
+      count++;
+      document.getElementById('cart-count').textContent = count;
+      const btn = document.getElementById('cart-btn');
+      btn.style.background = '#b45309';
+      setTimeout(() => btn.style.background = '#1c1917', 400);
+    }
+  </script>
+</body>
+</html>

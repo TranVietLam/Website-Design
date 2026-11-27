@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FINPULSE — Nền Tảng Quản Trị Tài Chính Doanh Nghiệp</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, sans-serif; background: #0f172a; color: #f8fafc; line-height: 1.5; }
+    header { padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; background: rgba(15,23,42,0.9); position: sticky; top: 0; backdrop-filter: blur(8px); }
+    .brand { font-weight: 700; font-size: 16px; display: flex; align-items: center; gap: 8px; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #10b981; box-shadow: 0 0 12px #10b981; }
+    .cta-sm { background: #3b82f6; color: #fff; border: none; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 36px 24px; }
+    .hero { text-align: center; max-width: 680px; margin: 0 auto 36px; }
+    .pill { display: inline-block; font-size: 11px; font-weight: 600; color: #34d399; background: rgba(16,185,129,0.12); border: 1px solid rgba(16,185,129,0.3); padding: 4px 12px; border-radius: 999px; margin-bottom: 14px; }
+    h1 { font-size: clamp(26px, 4vw, 42px); line-height: 1.15; margin-bottom: 12px; }
+    .hero p { color: #94a3b8; font-size: 15px; margin-bottom: 20px; }
+    .dashboard { background: #1e293b; border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 20px; box-shadow: 0 24px 48px -16px rgba(0,0,0,0.5); }
+    .kpi-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 20px; }
+    .kpi { background: #0f172a; border: 1px solid rgba(255,255,255,0.07); border-radius: 12px; padding: 14px; }
+    .kpi span { font-size: 11px; color: #94a3b8; display: block; margin-bottom: 4px; }
+    .kpi strong { font-size: 20px; color: #f8fafc; }
+    .kpi em { font-style: normal; font-size: 11px; color: #34d399; margin-left: 6px; }
+    .chart { height: 150px; background: #0f172a; border-radius: 12px; padding: 16px; display: flex; align-items: flex-end; gap: 10px; }
+    .bar { flex: 1; background: linear-gradient(180deg, #3b82f6, #1d4ed8); border-radius: 6px 6px 0 0; position: relative; transition: height 0.4s ease; }
+    .bar.hi { background: linear-gradient(180deg, #10b981, #059669); }
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+    .feat { background: rgba(30,41,59,0.6); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 18px; }
+    .feat h3 { font-size: 15px; margin-bottom: 6px; }
+    .feat p { font-size: 13px; color: #94a3b8; }
+    @media (max-width: 680px) {
+      .kpi-row, .features { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="dot"></span> FINPULSE</div>
+    <button class="cta-sm" onclick="alert('Đã kích hoạt bản dùng thử 14 ngày miễn phí!')">Dùng thử miễn phí →</button>
+  </header>
+
+  <div class="wrap">
+    <div class="hero">
+      <span class="pill">● DÀNH CHO DOANH NGHIỆP SME</span>
+      <h1>Kiểm soát dòng tiền &amp; lãi lỗ theo thời gian thực.</h1>
+      <p>Kết nối ngân hàng, hóa đơn điện tử và báo cáo thuế tự động trên một màn hình duy nhất.</p>
+      <button class="cta-sm" style="padding:12px 24px;font-size:14px;" onclick="alert('Đội ngũ FinPulse sẽ gửi tài khoản demo qua Zalo trong 5 phút!')">Nhận tài khoản Demo</button>
+    </div>
+
+    <div class="dashboard">
+      <div class="kpi-row">
+        <div class="kpi"><span>Doanh thu tháng</span><strong>1.48 tỷ</strong><em>+24%</em></div>
+        <div class="kpi"><span>Lợi nhuận ròng</span><strong>412 triệu</strong><em>+18%</em></div>
+        <div class="kpi"><span>Công nợ thu hồi</span><strong>96.4%</strong><em>Tốt</em></div>
+      </div>
+      <div class="chart">
+        <div class="bar" style="height:42%"></div>
+        <div class="bar" style="height:58%"></div>
+        <div class="bar" style="height:50%"></div>
+        <div class="bar" style="height:74%"></div>
+        <div class="bar" style="height:68%"></div>
+        <div class="bar" style="height:86%"></div>
+        <div class="bar hi" style="height:98%"></div>
+      </div>
+    </div>
+
+    <div class="features">
+      <div class="feat"><h3>⚡ Đồng bộ 15+ ngân hàng</h3><p>Tự động đối soát giao dịch chuyển khoản QR trong 3 giây.</p></div>
+      <div class="feat"><h3>📊 Báo cáo 1 chạm</h3><p>Xuất file Excel &amp; PDF gửi cổ đông chỉ với một cú click.</p></div>
+      <div class="feat"><h3>🔒 Chuẩn bảo mật ngân hàng</h3><p>Mã hóa SSL 256-bit và sao lưu dữ liệu tự động mỗi giờ.</p></div>
+    </div>
+  </div>
+</body>
+</html>
